@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: 'Helvetica-normal';
+  src: url("../../fonts/helvetica_regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Helvetica-bold';
+  src: url("../../fonts/helvetica_bold.otf") format("opentype");
+}
+
+@media screen and (min-width: 360px) {
+  section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .wrapper {
+    width: 330px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .hero-section .wrapper {
+    padding-top: 40px;
+  }
+  .hero-section .wrapper .hero-title {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    color: #394491;
+    margin-bottom: 20px;
+  }
+  .hero-section .wrapper .hero-description {
+    font-family: 'Helvetica-normal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #1a2680;
+    margin-bottom: 45px;
+  }
+  .hero-section .wrapper .hero-description span {
+    display: none;
+  }
+  .hero-section .wrapper .hero-btn-1 {
+    width: 330px;
+    height: 60px;
+    display: block;
+    font-family: 'Helvetica-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.3469px;
+    line-height: 170%;
+    color: white;
+    background-color: #394491;
+    margin-bottom: 20px;
+  }
+  .hero-section .wrapper .hero-btn-2 {
+    width: 330px;
+    height: 60px;
+    display: block;
+    font-family: 'Helvetica-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.3469px;
+    line-height: 170%;
+    color: white;
+    background-color: #d40e49;
+    margin-bottom: 65px;
+  }
+  .hero-section .wrapper .skills-container {
+    position: relative;
+    width: 244px;
+  }
+  .hero-section .wrapper .skills-container .discount {
+    position: absolute;
+    right: -75px;
+    top: -25px;
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    color: #394491;
+  }
+  .hero-section .wrapper .skills-container .skills-list {
+    padding: 20px;
+    padding-right: 10px;
+    background-color: rgba(213, 14, 73, 0.6);
+    background-blend-mode: darken;
+  }
+  .hero-section .wrapper .skills-container .skills-list li {
+    margin-bottom: 20px;
+  }
+  .hero-section .wrapper .skills-container .skills-list li:last-child {
+    margin-bottom: 0;
+  }
+  .hero-section .wrapper .skills-container .skills-list li p {
+    font-family: 'Helvetica-normal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .section-2 img {
+    display: none;
+  }
+  .section-2 .content-flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section-2 .content-flex-container .description-container {
+    width: 234px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    margin-right: 10px;
+  }
+  .section-2 .content-flex-container .description-container .title {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.21;
+    color: #d40e49;
+    margin-bottom: 14px;
+  }
+  .section-2 .content-flex-container .description-container .description {
+    font-family: 'Helvetica-normal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.69;
+    color: #483eb4;
+  }
+  .section-2 .content-flex-container .stats-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(213, 14, 73, 0.6);
+  }
+  .section-2 .content-flex-container .stats-container .stats-list {
+    width: 100%;
+  }
+  .section-2 .content-flex-container .stats-container .stats-list li p {
+    padding-left: 3px;
+    font-family: 'Helvetica-normal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .section-2 .content-flex-container .stats-container .stats-list li p:first-child {
+    font-size: 44px;
+    color: transparent;
+    -webkit-text-stroke: 1.1px white;
+    margin-bottom: 3px;
+  }
+  .section-2 .content-flex-container .stats-container .stats-list li:last-child p:last-child {
+    margin-bottom: 0;
+  }
+  .section-2 .you-can-trust-container {
+    position: relative;
+    width: 244px;
+    padding: 35px 11px 67px 11px;
+    background-color: rgba(213, 14, 73, 0.6);
+    margin-bottom: 20px;
+  }
+  .section-2 .you-can-trust-container .description {
+    font-family: 'Helvetica-normal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: white;
+  }
+  .section-2 .you-can-trust-container .title {
+    position: absolute;
+    left: 54px;
+    bottom: 19px;
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    white-space: nowrap;
+    color: #ffffff;
+  }
+  .section-2 .you-can-trust-container .title span {
+    color: #d40e49;
+  }
+  .section-2 .descr-container p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #483eb4;
+    margin-bottom: 20px;
+  }
+  .section-2 .descr-container p:last-child {
+    margin-bottom: 40px;
+  }
+  .section-2 .section-2-btn {
+    width: 330px;
+    height: 60px;
+    background-color: #394491;
+  }
+  .section-2 .section-2-btn p {
+    font-family: 'Helvetica-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.3469px;
+    line-height: 170%;
+    color: #ffffff;
+  }
+}
+/*# sourceMappingURL=main.css.map */

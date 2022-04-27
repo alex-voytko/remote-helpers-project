@@ -1,0 +1,10 @@
+@media screen and (min-width: $mobile) {
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper {
+    width: 330px;
+  }
+}

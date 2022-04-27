@@ -1,0 +1,89 @@
+@media screen and (min-width: $mobile) {
+  .hero-section {
+    .wrapper {
+      padding-top: 40px;
+      .hero-title {
+        font-family: 'Philosopher';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        color: $accentBlue1;
+        margin-bottom: 20px;
+      }
+      .hero-description {
+        font-family: 'Helvetica-normal';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: $accentBlue2;
+        margin-bottom: 45px;
+        span {
+          display: none;
+        }
+      }
+      .hero-btn-1 {
+        width: 330px;
+        height: 60px;
+        display: block;
+        font-family: 'Helvetica-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27.3469px;
+        line-height: 170%;
+        color: white;
+        background-color: $accentBlue1;
+        margin-bottom: 20px;
+      }
+      .hero-btn-2 {
+        width: 330px;
+        height: 60px;
+        display: block;
+        font-family: 'Helvetica-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27.3469px;
+        line-height: 170%;
+        color: white;
+        background-color: $accentRed;
+        margin-bottom: 65px;
+      }
+      .skills-container {
+        position: relative;
+        width: 244px;
+        .discount {
+          position: absolute;
+          right: -75px;
+          top: -25px;
+          font-family: 'Philosopher';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 120%;
+          color: $accentBlue1;
+        }
+        .skills-list {
+          padding: 20px;
+          padding-right: 10px;
+          background-color: $accentRedShape;
+          background-blend-mode: darken;
+          li {
+            margin-bottom: 20px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            p {
+              font-family: 'Helvetica-normal';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 27px;
+              line-height: 33px;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

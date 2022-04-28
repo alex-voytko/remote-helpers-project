@@ -17,6 +17,10 @@ button {
   margin: 0;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 body,
 h1,
 h2,
@@ -81,12 +85,12 @@ select {
 
 @font-face {
   font-family: 'Helvetica-normal';
-  src: url("../../fonts/helvetica_regular.otf") format("opentype");
+  src: url("../fonts/helvetica_regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Helvetica-bold';
-  src: url("../../fonts/helvetica_bold.otf") format("opentype");
+  src: url("../fonts/helvetica_bold.otf") format("opentype");
 }
 
 @media screen and (min-width: 360px) {
@@ -201,7 +205,7 @@ select {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: url("../../img/hero-image.jpg");
+    background-image: url("../img/hero-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -528,7 +532,7 @@ select {
   .section-2 .img-container .img-contain {
     width: 600px;
     height: 281px;
-    background-image: url("../../img/working-process.jpg");
+    background-image: url("../img/working-process.jpg");
     background-size: contain;
   }
   .section-2 .content-flex-container {
@@ -948,7 +952,7 @@ select {
   .section-3 .img-container .img-contain {
     width: 270px;
     height: 618px;
-    background-image: url("../../img/team.jpg");
+    background-image: url("../img/team.jpg");
     background-size: contain;
   }
 }
@@ -1010,8 +1014,6 @@ select {
   .section-3 .img-container .img-contain {
     width: 360px;
     height: 824px;
-    background-image: url("../../img/team.jpg");
-    background-size: contain;
   }
 }
 

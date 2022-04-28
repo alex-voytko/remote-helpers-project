@@ -10,6 +10,8 @@ ol[class] {
 }
 button {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 body,
@@ -25,7 +27,8 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd,
+button {
   margin: 0;
 }
 

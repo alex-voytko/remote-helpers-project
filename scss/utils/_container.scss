@@ -8,3 +8,21 @@
     width: 330px;
   }
 }
+
+@media screen and (min-width: $tablet) {
+  .wrapper {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .wrapper {
+    width: 1100px;
+  }
+}
+
+@media screen and (min-width: $fullHD) {
+  .wrapper {
+    width: 1716px;
+  }
+}

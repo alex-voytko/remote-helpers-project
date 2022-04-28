@@ -4,50 +4,30 @@
       padding-top: 40px;
       .hero-title {
         font-family: 'Philosopher';
-        font-style: normal;
-        font-weight: 700;
         font-size: 48px;
         line-height: 100%;
         color: $accentBlue1;
         margin-bottom: 20px;
       }
-      .hero-description {
+      .hero-description-2 {
         font-family: 'Helvetica-normal';
-        font-style: normal;
-        font-weight: 400;
         font-size: 24px;
-        line-height: 120%;
+        line-height: 150%;
         color: $accentBlue2;
         margin-bottom: 45px;
-        span {
-          display: none;
-        }
       }
-      .hero-btn-1 {
-        width: 330px;
-        height: 60px;
-        display: block;
-        font-family: 'Helvetica-bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 27.3469px;
-        line-height: 170%;
-        color: white;
-        background-color: $accentBlue1;
-        margin-bottom: 20px;
+      .hero-description-1 {
+        display: none;
       }
-      .hero-btn-2 {
-        width: 330px;
-        height: 60px;
-        display: block;
-        font-family: 'Helvetica-bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 27.3469px;
-        line-height: 170%;
-        color: white;
-        background-color: $accentRed;
+      .btn-container {
         margin-bottom: 65px;
+        .hero-btn-1 {
+          @include standartBtn($accentBlue1);
+          margin-bottom: 20px;
+        }
+        .hero-btn-2 {
+          @include standartBtn($accentRed);
+        }
       }
       .skills-container {
         position: relative;
@@ -57,7 +37,6 @@
           right: -75px;
           top: -25px;
           font-family: 'Philosopher';
-          font-style: normal;
           font-weight: 700;
           font-size: 48px;
           line-height: 120%;
@@ -75,11 +54,193 @@
             }
             p {
               font-family: 'Helvetica-normal';
-              font-style: normal;
-              font-weight: 400;
               font-size: 27px;
               line-height: 33px;
               color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: $tablet) {
+  .hero-section {
+    background-image: url('../../img/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .wrapper {
+      padding-top: 40px;
+      .hero-title {
+        width: 600px;
+        display: block;
+        margin-bottom: 40px;
+      }
+      .hero-description-1 {
+        width: 430px;
+        display: block;
+        font-family: 'Helvetica-normal';
+        font-size: 24px;
+        line-height: 150%;
+        color: $accentBlue2;
+      }
+      .hero-description-2 {
+        width: 470px;
+        margin-bottom: 70px;
+      }
+      .flex-wrap-container {
+        display: flex;
+      }
+      .btn-container {
+        width: 470px;
+      }
+      .hero-btn-1 {
+        margin-bottom: 30px;
+      }
+      .skills-container {
+        margin-left: 24px;
+        .discount {
+          right: 0px;
+          top: -25px;
+          font-weight: 400;
+          font-size: 60px;
+          color: white;
+        }
+        .skills-list {
+          li {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            &:last-child {
+              padding-bottom: 35px;
+            }
+            &:first-child {
+              padding-top: 40px;
+            }
+            p {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: $desktop) {
+  .hero-section {
+    .wrapper {
+      padding-top: 70px;
+      .hero-title {
+        font-size: 64px;
+        width: 750px;
+      }
+      .content-container {
+        width: 700px;
+        .text-container {
+          width: 600px;
+          .hero-description-1 {
+            display: inline;
+          }
+          .hero-description-2 {
+            display: inline;
+          }
+        }
+      }
+      .btn-container {
+        width: inherit;
+        margin-top: 90px;
+        .hero-btn-1 {
+          margin-right: 30px;
+        }
+      }
+      .skills-container {
+        margin-left: 50px;
+        width: 350px;
+        .discount {
+          right: -15px;
+          top: -55px;
+          font-size: 70px;
+        }
+        .skills-list {
+          li {
+            padding-left: 50px;
+            &:last-child {
+              padding-bottom: 75px;
+            }
+            p {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $fullHD) {
+  .hero-section {
+    height: 1080px;
+    .wrapper {
+      padding-top: 100px;
+      .hero-title {
+        width: 1058px;
+        font-size: 96px;
+        line-height: 108px;
+        margin-bottom: 26px;
+      }
+      .content-container {
+        width: 860px;
+        padding-top: 34px;
+        .text-container {
+          width: 775px;
+          .hero-description-1 {
+            font-size: 32px;
+            line-height: 140%;
+          }
+          .hero-description-2 {
+            margin-bottom: 143px;
+            font-size: 32px;
+            line-height: 140%;
+          }
+        }
+      }
+      .btn-container {
+        margin-top: 90px;
+        margin-bottom: 0;
+        .hero-btn-1 {
+          @include fullHDBtn(441px, $accentBlue1);
+          margin-right: 60px;
+          margin-bottom: 0;
+        }
+        .hero-btn-2 {
+          @include fullHDBtn(355px, $accentRed);
+        }
+      }
+      .skills-container {
+        margin-left: 176px;
+        width: 560px;
+        .discount {
+          font-size: 180px;
+          line-height: 120%;
+          font-weight: 300;
+          left: 225px;
+          top: -128px;
+        }
+        .skills-list {
+          padding: 72px 0 196px 93px;
+          li {
+            padding-left: 0;
+            margin-bottom: 20px;
+            p {
+              font-size: 36px;
+              line-height: 50px;
+            }
+            &:first-child {
+              padding-top: 0;
+            }
+            &:last-child {
+              padding: 0;
             }
           }
         }

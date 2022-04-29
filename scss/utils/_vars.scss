@@ -4,6 +4,7 @@ $accentBlue2: #1a2680;
 $accentBlue3: #483eb4;
 $accentRed: #d40e49;
 $accentRedShape: rgba(213, 14, 73, 0.6);
+$accentBlueShape: rgba(57, 68, 145, 0.6);
 
 // viewports:
 $mobile: 360px;
@@ -16,7 +17,7 @@ $fullHD: 1920px;
   width: 330px;
   height: 60px;
   background-color: $bc;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Helvetica-bold';
   font-size: 27.3469px;
   line-height: 170%;
@@ -29,4 +30,33 @@ $fullHD: 1920px;
   font-family: 'Helvetica-bold';
   font-size: 36px;
   line-height: 170%;
+}
+@mixin mobileSliderButtons {
+  display: flex;
+  justify-content: center;
+  .swiper-btn-prev {
+    margin: 0 10px 0 0;
+    .svg-container-1 {
+      width: 27px;
+      height: 27px;
+      background-image: url('../svg/mobile-arrow-left.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      &.swiper-button-disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+  .swiper-btn-next {
+    .svg-container-2 {
+      width: 27px;
+      height: 27px;
+      background-image: url('../svg/mobile-arrow-right.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      &.swiper-button-disabled {
+        opacity: 0.5;
+      }
+    }
+  }
 }

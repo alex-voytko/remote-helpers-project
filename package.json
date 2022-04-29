@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://alex-voytko.github.io/remote-helpers-project/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url /remote-helpers-project/"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,8 @@
   "bugs": {
     "url": "https://github.com/alex-voytko/remote-helpers-project/issues"
   },
-  "homepage": "https://github.com/alex-voytko/remote-helpers-project#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
-  }
+  },
+  "dependencies": {}
 }

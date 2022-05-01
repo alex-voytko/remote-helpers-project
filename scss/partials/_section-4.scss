@@ -1,10 +1,6 @@
 @media screen and (min-width: $mobile) {
   .section-4 {
     padding: 13px 0 33px 0;
-    // .swiper {
-    //   width: 600px;
-    //   height: 300px;
-    // }
     .title {
       font-family: 'Philosopher';
       font-weight: 700;
@@ -17,7 +13,6 @@
 
     .main-content-wrapper {
       position: relative;
-      margin-bottom: 20px;
       .img-shape-container {
         .img-contain {
           position: absolute;
@@ -30,9 +25,11 @@
         .shape-contain {
           position: absolute;
           top: 47px;
-          width: 280px;
+          left: 1px;
+          width: 277px;
           height: 263px;
           background-color: $accentRedShape;
+          background-blend-mode: darken;
           z-index: -1;
         }
       }
@@ -65,10 +62,11 @@
           font-size: 18px;
           line-height: 20px;
           color: $accentBlue1;
+          margin-bottom: 10px;
         }
         ul {
-          padding-left: 0; /* Убираем отступ слева */
-          list-style-type: none; /* Прячем маркеры списка */
+          padding-left: 0;
+          list-style-type: none;
         }
         li {
           margin-bottom: 5px;
@@ -103,13 +101,240 @@
         }
       }
     }
+    .standart-btn-hire-specialist {
+      display: none;
+    }
     .nav-container {
-      @include mobileSliderButtons;
+      @include sliderButtons(
+        27px,
+        27px,
+        url('../../svg/mobile-arrow-left.svg'),
+        url('../../svg/mobile-arrow-right.svg')
+      );
     }
     .btn-container {
       .btn {
         margin-top: 24px;
         @include standartBtn($accentRed);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .section-4 {
+    .title {
+      display: none;
+    }
+    .main-content-wrapper {
+      margin-bottom: 35px;
+      .img-shape-container {
+        .img-contain {
+          right: 2px;
+        }
+        .shape-contain {
+          left: auto;
+          right: 47px;
+        }
+      }
+      .speciality-container {
+        padding: 0;
+        margin-bottom: 26px;
+        h3 {
+          font-size: 38px;
+          line-height: 1;
+          color: $accentBlue1;
+          padding-left: 3px;
+        }
+      }
+      .descr-container {
+        width: 340px;
+        padding: 0 0 0 30px;
+        margin-bottom: 30px;
+        .description {
+          width: inherit;
+          color: $accentBlue1;
+        }
+      }
+      .candidate-container {
+        width: 340px;
+        padding-left: 30px;
+      }
+    }
+    .standart-btn-hire-specialist {
+      display: block;
+      @include standartBtn($accentRed);
+      margin-bottom: 30px;
+      margin-left: 15px;
+    }
+    .btn-container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .section-4 {
+    padding: 13px 0 33px 0;
+    .main-content-wrapper {
+      .img-shape-container {
+        .img-contain {
+          img {
+            width: 400px;
+          }
+        }
+        .shape-contain {
+          width: 400px;
+          height: 376px;
+          top: 70px;
+          right: 70px;
+        }
+      }
+      .speciality-container {
+        h3 {
+          font-size: 48px;
+        }
+      }
+      .descr-container {
+        width: 530px;
+        .description {
+          font-size: 20px;
+        }
+      }
+      .candidate-container {
+        width: 530px;
+        margin: 0;
+        h4 {
+          font-size: 24px;
+          width: 250px;
+          margin-bottom: 20px;
+        }
+        li {
+          margin-bottom: 10px;
+        }
+        .candidate-skills-container {
+          width: 250px;
+          p {
+            font-size: 20px;
+          }
+          h4 {
+            width: 250px;
+          }
+        }
+        .work-to-be-done-container {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .standart-btn-hire-specialist {
+      margin-left: 30px;
+    }
+    .nav-container {
+      @include sliderButtons(
+        60px,
+        27px,
+        url('../../svg/desktop-arrow-left.svg'),
+        url('../../svg/desktop-arrow-right.svg')
+      );
+    }
+  }
+}
+
+@media screen and (min-width: $fullHD) {
+  .section-4 {
+    padding: 90px 0 33px 78px;
+    .main-content-wrapper {
+      margin-bottom: 60px;
+      .img-shape-container {
+        .img-contain {
+          img {
+            width: 564px;
+          }
+        }
+        .shape-contain {
+          width: 564px;
+          height: 530px;
+          top: 94px;
+          right: 98px;
+        }
+      }
+      .speciality-container {
+        margin-bottom: 20px;
+        h3 {
+          font-size: 64px;
+          line-height: 1.125;
+        }
+      }
+      .descr-container {
+        width: 587px;
+        padding-left: 0;
+        margin-bottom: 40px;
+        .description {
+          font-size: 24px;
+          line-height: 170%;
+        }
+      }
+      .candidate-container {
+        padding-left: 0;
+        h4 {
+          font-size: 36px;
+          line-height: 40px;
+        }
+        li {
+          margin-bottom: 16px;
+          padding-left: 20px;
+          &::before {
+            margin-right: 20px;
+          }
+        }
+        .candidate-skills-container {
+          width: 289px;
+          p {
+            font-size: 24px;
+            line-height: 33px;
+          }
+          h4 {
+            width: 289px;
+          }
+        }
+        .work-to-be-done-container {
+          width: 486px;
+          p {
+            font-size: 24px;
+            line-height: 33px;
+          }
+          h4 {
+            width: 486px;
+          }
+        }
+      }
+    }
+    .standart-btn-hire-specialist {
+      @include fullHDBtn(355px, $accentRed);
+      margin-bottom: 20px;
+    }
+    .nav-container {
+      @include sliderButtons(
+        128px,
+        30px,
+        url('../../svg/standart-arrow-left.svg'),
+        url('../../svg/standart-arrow-right.svg')
+      );
+      .swiper-btn-next,
+      .swiper-btn-prev {
+        .svg-container-1 {
+          background-color: $accentRed;
+          background-position: right center;
+        }
+        .svg-container-2 {
+          background-color: $accentRed;
+          background-position: left center;
+        }
+      }
+      .swiper-btn-prev {
+        margin-right: 19px;
       }
     }
   }

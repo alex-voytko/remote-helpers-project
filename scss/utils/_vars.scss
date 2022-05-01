@@ -31,31 +31,31 @@ $fullHD: 1920px;
   font-size: 36px;
   line-height: 170%;
 }
-@mixin mobileSliderButtons {
+@mixin sliderButtons($w, $h, $leftUrl, $rightUrl) {
   display: flex;
   justify-content: center;
   .swiper-btn-prev {
     margin: 0 10px 0 0;
     .svg-container-1 {
-      width: 27px;
-      height: 27px;
-      background-image: url('../svg/mobile-arrow-left.svg');
+      width: $w;
+      height: $h;
+      background-image: $leftUrl;
       background-repeat: no-repeat;
       background-position: center;
       &.swiper-button-disabled {
-        opacity: 0.5;
+        opacity: 0.4;
       }
     }
   }
   .swiper-btn-next {
     .svg-container-2 {
-      width: 27px;
-      height: 27px;
-      background-image: url('../svg/mobile-arrow-right.svg');
+      width: $w;
+      height: $h;
+      background-image: $rightUrl;
       background-repeat: no-repeat;
       background-position: center;
       &.swiper-button-disabled {
-        opacity: 0.5;
+        opacity: 0.4;
       }
     }
   }

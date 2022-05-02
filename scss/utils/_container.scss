@@ -1,5 +1,6 @@
 @media screen and (min-width: $mobile) {
-  section {
+  section,
+  footer {
     width: 100%;
     display: flex;
     justify-content: center;

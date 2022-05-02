@@ -1530,7 +1530,7 @@ select {
     left: -15px;
     top: -30px;
     z-index: -1;
-    background-image: url("../../img/section-5-bg.jpg");
+    background-image: url("../img/section-5-bg.jpg");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -1587,7 +1587,7 @@ select {
   .section-5 .nav-buttons .swiper-btn-prev .svg-container-1 {
     width: 27px;
     height: 27px;
-    background-image: url("../../svg/mobile-arrow-left.svg");
+    background-image: url("../svg/mobile-arrow-left.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1597,7 +1597,7 @@ select {
   .section-5 .nav-buttons .swiper-btn-next .svg-container-2 {
     width: 27px;
     height: 27px;
-    background-image: url("../../svg/mobile-arrow-right.svg");
+    background-image: url("../svg/mobile-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1672,7 +1672,7 @@ select {
   .section-5 .nav-buttons .swiper-btn-prev .svg-container-1 {
     width: 60px;
     height: 27px;
-    background-image: url("../../svg/desktop-arrow-left.svg");
+    background-image: url("../svg/desktop-arrow-left.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1682,7 +1682,7 @@ select {
   .section-5 .nav-buttons .swiper-btn-next .svg-container-2 {
     width: 60px;
     height: 27px;
-    background-image: url("../../svg/desktop-arrow-right.svg");
+    background-image: url("../svg/desktop-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1752,7 +1752,7 @@ select {
   .section-5 .nav-buttons .swiper-btn-prev .svg-container-1 {
     width: 128px;
     height: 30px;
-    background-image: url("../../svg/standart-arrow-left.svg");
+    background-image: url("../svg/standart-arrow-left.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1762,7 +1762,7 @@ select {
   .section-5 .nav-buttons .swiper-btn-next .svg-container-2 {
     width: 128px;
     height: 30px;
-    background-image: url("../../svg/standart-arrow-right.svg");
+    background-image: url("../svg/standart-arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1914,7 +1914,7 @@ select {
     top: 40px;
     left: 50px;
     z-index: -2;
-    background-image: url("../../img/get-in-touch.jpg");
+    background-image: url("../img/get-in-touch.jpg");
     background-size: contain;
     background-repeat: no-repeat;
   }

@@ -22,7 +22,7 @@
         left: -15px;
         top: -30px;
         z-index: -1;
-        background-image: url('../../img/section-5-bg.jpg');
+        background-image: url('../img/section-5-bg.jpg');
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -70,8 +70,8 @@
       @include sliderButtons(
         27px,
         27px,
-        url('../../svg/mobile-arrow-left.svg'),
-        url('../../svg/mobile-arrow-right.svg')
+        url('../svg/mobile-arrow-left.svg'),
+        url('../svg/mobile-arrow-right.svg')
       );
     }
   }
@@ -138,8 +138,8 @@
       @include sliderButtons(
         60px,
         27px,
-        url('../../svg/desktop-arrow-left.svg'),
-        url('../../svg/desktop-arrow-right.svg')
+        url('../svg/desktop-arrow-left.svg'),
+        url('../svg/desktop-arrow-right.svg')
       );
     }
   }
@@ -199,8 +199,8 @@
       @include sliderButtons(
         128px,
         30px,
-        url('../../svg/standart-arrow-left.svg'),
-        url('../../svg/standart-arrow-right.svg')
+        url('../svg/standart-arrow-left.svg'),
+        url('../svg/standart-arrow-right.svg')
       );
       .swiper-btn-next,
       .swiper-btn-prev {

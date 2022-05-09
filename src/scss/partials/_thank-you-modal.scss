@@ -1,0 +1,98 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: black, $alpha: 0.8);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.4s ease 0s;
+  &.is-visible {
+    pointer-events: initial;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: $mobile) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100px;
+    max-width: 300px;
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    p {
+      font-family: 'Philosopher';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+      text-align: center;
+      margin-bottom: 20px;
+      color: $accentBlue;
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+    }
+    .modal-btn {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      @include standartBtn($accentBlue);
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .modal {
+    max-width: 500px;
+    p {
+      font-size: 28px;
+      margin-bottom: 30px;
+      &:nth-child(2) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .modal {
+    max-width: 600px;
+    p {
+      font-size: 38px;
+    }
+    .modal-btn {
+      @include standartBtn($accentBlue);
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (min-width: $fullHD) {
+  .modal {
+    max-width: 700px;
+    padding: 40px;
+    p {
+      font-size: 48px;
+      margin-bottom: 40px;
+      &:nth-child(2) {
+        margin-bottom: 50px;
+      }
+    }
+    .modal-btn {
+      @include fullHDBtn(200px, $accentBlue);
+    }
+  }
+}

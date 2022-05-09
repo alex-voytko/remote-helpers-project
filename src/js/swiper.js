@@ -4,5 +4,8 @@ new Swiper('.swiper', {
     prevEl: '.svg-container-1',
     lockClass: '.swiper-button-disabled',
   },
-  slidesPerView: 1,
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  centeredSlides: true,
+  initialSlide: 3,
 });

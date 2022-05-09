@@ -2,281 +2,228 @@
   .section-3 {
     position: relative;
     padding-bottom: 80px;
+    padding-top: 80px;
     .title {
+      width: 245px;
       font-family: 'Philosopher';
+      font-style: normal;
       font-weight: 700;
       font-size: 24px;
       line-height: 27px;
-      text-align: right;
-      color: $accentRed;
-      margin-bottom: 26px;
+      color: $accentYellow;
+      margin-bottom: 52px;
     }
-    .steps-container {
-      display: flex;
-      flex-direction: row-reverse;
-      .number-list {
-        position: absolute;
-        width: 110px;
-        height: inherit;
-        left: 0;
-        padding-left: 70px;
-        background-color: $accentRedShape;
-        padding-bottom: 44px;
-        li {
-          p {
-            color: transparent;
-            -webkit-text-stroke: 1px white;
-          }
-          &:first-child {
-            margin-bottom: 90px;
-          }
-          &:nth-child(2) {
-            margin-bottom: 68px;
-          }
-          &:nth-child(3) {
-            margin-bottom: 114px;
-          }
+    .advantage-list {
+      margin-bottom: 60px;
+      &__item {
+        display: flex;
+        margin-bottom: 52px;
+        flex-wrap: wrap;
+        &:nth-last-child(1) {
+          margin-bottom: 0;
         }
+      }
+      &__number-container {
+        width: 80px;
+        height: 72px;
+        background-image: url('../svg/number-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 10px;
+        margin-bottom: 3px;
         p {
+          width: 67px;
           font-family: 'Helvetica';
           font-style: normal;
           font-weight: 400;
-          font-size: 48px;
-          line-height: 140%;
+          font-size: 52px;
+          line-height: 1;
+          padding-left: 21px;
+          color: transparent;
+          -webkit-text-stroke: 1px #fff;
         }
       }
-      .steps-list {
-        padding-left: 118px;
-        padding-top: 34px;
-        margin-bottom: 41px;
+      &__title-container {
+        width: 200px;
+        display: inline;
+        padding-top: 7px;
+        margin-bottom: 22px;
         h3 {
+          width: 107px;
           font-family: 'Helvetica-bold';
           font-size: 18px;
           line-height: 120%;
-          color: $accentBlue1;
-          margin-bottom: 10px;
+          color: $accentBlue;
         }
+      }
+      &__description-container {
+        padding-left: 60px;
         p {
           font-family: 'Helvetica';
           font-size: 16px;
           line-height: 150%;
-          color: $accentBlue1;
-        }
-        li {
-          margin-bottom: 30px;
-          &:last-child {
-            margin-bottom: 0;
-          }
+          color: $accentBlue;
+          left: 15px;
         }
       }
     }
-    .btn {
-      @include standartBtn($accentRed);
-    }
-    .img-container {
-      display: none;
+    .btn-container {
+      .btn {
+        @include standartBtn($accentBlue);
+      }
     }
   }
 }
 
 @media screen and(min-width: $tablet) {
   .section-3 {
-    .wrapper {
-      position: relative;
-      padding-bottom: 100px;
-    }
+    padding-top: 120px;
     .title {
+      width: 100%;
       font-size: 38px;
-      text-align: left;
-      margin-bottom: 50px;
-      span {
-        display: block;
-        padding-top: 10px;
-      }
+      margin-bottom: 70px;
     }
-    .steps-container {
+    .advantage-list {
       display: flex;
-      flex-direction: row;
-      .steps-btn-container {
-        width: 400px;
-        padding-left: 50px;
-        .steps-list {
-          padding: 0;
-          margin-bottom: 41px;
+      flex-wrap: wrap;
+      &__item {
+        width: 300px;
+        &:nth-child(odd) {
+          margin-right: 52px;
         }
-      }
-      .number-list {
-        width: 230px;
-        position: static;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding: 40px 0 0 20px;
-        li {
-          p {
-            font-size: 60px;
-          }
-          &:first-child {
-            margin-bottom: 40px;
-          }
-          &:nth-child(2) {
-            margin-bottom: 40px;
-          }
-          &:nth-child(3) {
-            margin-bottom: 40px;
-          }
+        &:nth-child(3) {
+          margin-bottom: 0;
         }
       }
     }
-    .img-container {
-      position: absolute;
-      display: block;
-      z-index: -1;
-      right: -15px;
-      bottom: 0;
-      .img-contain {
-        width: 270px;
-        height: 618px;
-        background-image: url('../img/team.jpg');
-        background-size: contain;
-      }
+    .btn-container {
+      display: flex;
+      justify-content: center;
     }
   }
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and(min-width: $desktop) {
   .section-3 {
+    padding-bottom: 100px;
     .title {
       font-size: 48px;
-      padding-left: 100px;
-      span {
-        padding-top: 20px;
-      }
+      line-height: 1;
     }
-    .steps-container {
-      .steps-btn-container {
+    .advantage-list {
+      margin-bottom: 70px;
+      &__item {
         width: 500px;
-        padding-left: 150px;
-        margin-right: 20px;
-        .steps-list {
-          margin-bottom: 80px;
-          h3 {
-            font-size: 28px;
-          }
-          p {
-            font-size: 20px;
-          }
+        &:nth-child(-n + 2) {
+          margin-bottom: 70px;
         }
       }
-      .number-list {
-        width: 350px;
-        position: static;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding: 40px 0 0 80px;
-        li {
-          p {
-            font-size: 100px;
-          }
-          &:first-child {
-            margin-bottom: 30px;
-          }
-          &:nth-child(2) {
-            margin-bottom: 30px;
-          }
-          &:nth-child(3) {
-            margin-bottom: 30px;
-          }
+      &__number-container {
+        width: 140px;
+        height: 126px;
+        background-size: contain;
+        margin-right: 25px;
+        p {
+          font-size: 96px;
+          padding-left: 40px;
         }
       }
-    }
-    .img-container {
-      position: absolute;
-      display: block;
-      z-index: -1;
-      right: -15px;
-      bottom: 0;
-      .img-contain {
-        width: 360px;
-        height: 824px;
+      &__title-container {
+        width: 320px;
+        margin-bottom: 0;
+        h3 {
+          width: inherit;
+          font-family: 'Philosopher';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 150%;
+          color: #23329a;
+        }
+      }
+      &__description-container {
+        padding-left: 165px;
+        margin-top: -70px;
+        p {
+          font-size: 24px;
+        }
       }
     }
   }
 }
 
-@media screen and (min-width: $fullHD) {
+@media screen and(min-width: $fullHD) {
   .section-3 {
-    padding-bottom: 160px;
+    padding-top: 180px;
+    padding-bottom: 180px;
     .title {
       font-size: 64px;
       line-height: 72px;
-      padding-left: 269px;
+      text-align: right;
+      padding-right: 121px;
       margin-bottom: 80px;
       span {
-        padding-top: 0;
+        display: block;
       }
     }
-    .steps-container {
-      padding-left: 311px;
-      .steps-btn-container {
-        width: 468px;
-        padding-left: 0;
-        padding-top: 20px;
-        margin-right: 48px;
-        .steps-list {
-          margin-bottom: 120px;
-          h3 {
-            font-size: 36px;
-            line-height: 170%;
-          }
-          p {
-            font-size: 24px;
-            line-height: 150%;
-          }
-          li:nth-child(2) {
-            width: 391px;
+    .advantage-list {
+      width: 1427px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 120px;
+      &__item {
+        width: 641px;
+        &:nth-child(odd) {
+          margin-right: 145px;
+        }
+        &:nth-child(-n + 2) {
+          margin-bottom: 98.5px;
+          .advantage-list__description-container {
+            p {
+              width: 399px;
+            }
           }
         }
-        .btn {
-          @include fullHDBtn(333px, $accentRed);
+        &:last-child {
+          .advantage-list__description-container {
+            p {
+              width: 400px;
+            }
+          }
         }
       }
-      .number-list {
-        width: 615px;
-        // position: static;
-        // display: flex;
-        // flex-direction: column;
-        // text-align: left;
-        padding: 86px 0 235px 64px;
-        li {
-          p {
-            font-size: 144px;
-            line-height: 170%;
-            -webkit-text-stroke: 2px white;
-          }
-          &:first-child {
-            margin-bottom: -21px;
-          }
-          &:nth-child(2) {
-            margin-bottom: -21px;
-          }
-          &:nth-child(3) {
-            margin-bottom: -21px;
-          }
+      &__number-container {
+        width: 187px;
+        height: 195px;
+        margin-right: 40px;
+        p {
+          line-height: 170%;
+          padding-left: 60px;
+          -webkit-text-stroke: 2.6px #fff;
+        }
+      }
+      &__title-container {
+        width: 414px;
+        h3 {
+          width: inherit;
+          font-size: 36px;
+          line-height: 150%;
+        }
+      }
+      &__description-container {
+        width: 414px;
+        padding-left: 227px;
+        margin-top: -123px;
+        p {
+          width: inherit;
         }
       }
     }
-    .img-container {
-      //   position: absolute;
-      //   display: block;
-      //   z-index: -1;
-      right: 0;
-      top: 435px;
-      //   bottom: 0;
-      .img-contain {
-        width: 562px;
-        height: 1287px;
+    .btn-container {
+      justify-content: end;
+      padding-right: 121px;
+      .btn {
+        @include fullHDBtn(441px, $accentBlue);
       }
     }
   }

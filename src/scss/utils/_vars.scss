@@ -1,10 +1,8 @@
 // colors:
-$accentBlue1: #394491;
-$accentBlue2: #1a2680;
-$accentBlue3: #483eb4;
-$accentRed: #d40e49;
-$accentRedShape: rgba(213, 14, 73, 0.6);
-$accentBlueShape: rgba(57, 68, 145, 0.6);
+$accentBlue: #23329a;
+$accentYellow: #fcca0c;
+$accentYellowShape: rgba(252, 202, 12, 0.6);
+$accentBlueShape: rgba(35, 50, 154, 0.6);
 
 // viewports:
 $mobile: 360px;
@@ -44,6 +42,12 @@ $fullHD: 1920px;
       background-position: center;
       &.swiper-button-disabled {
         opacity: 0.4;
+        &:hover {
+          cursor: unset;
+        }
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -56,6 +60,12 @@ $fullHD: 1920px;
       background-position: center;
       &.swiper-button-disabled {
         opacity: 0.4;
+        &:hover {
+          cursor: unset;
+        }
+      }
+      &:hover {
+        cursor: pointer;
       }
     }
   }

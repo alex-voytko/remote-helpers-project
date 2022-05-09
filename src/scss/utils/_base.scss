@@ -3,12 +3,20 @@
 *::after {
   box-sizing: border-box;
 }
-
+@media screen and (min-width: $desktop) {
+  html {
+    overflow-x: hidden;
+  }
+}
+html {
+  background: #fff;
+}
 ul[class],
 ol[class] {
   padding: 0;
 }
-button {
+button,
+a {
   border: none;
   padding: 0;
   margin: 0;
@@ -67,14 +75,6 @@ select {
   font: inherit;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
 //font-family: 'Philosopher', sans-serif;
 @font-face {

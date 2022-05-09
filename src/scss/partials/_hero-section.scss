@@ -1,75 +1,139 @@
 @media screen and (min-width: $mobile) {
   .hero-section {
+    position: relative;
+    background-image: url('../img/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-size: 1566px 880px;
+    background-position: 60% top;
+    z-index: 0;
     .wrapper {
-      padding-top: 40px;
+      position: relative;
+      padding-top: 50px;
+      .link-email {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        text-decoration: none;
+        z-index: 2;
+        p {
+          font-family: 'Helvetica';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 140%;
+          color: $accentBlue;
+        }
+        &:hover p {
+          color: $accentYellow;
+        }
+      }
+      .link-phone {
+        display: none;
+      }
       .hero-title {
         font-family: 'Philosopher';
         font-size: 48px;
         line-height: 100%;
-        color: $accentBlue1;
+        color: $accentBlue;
         margin-bottom: 20px;
+        span {
+          display: none;
+        }
       }
-      .hero-description-2 {
-        font-family: 'Helvetica';
-        font-size: 24px;
-        line-height: 150%;
-        color: $accentBlue2;
-        margin-bottom: 45px;
-      }
-      .hero-description-1 {
-        display: none;
+      .text-container {
+        width: 271px;
+        margin-bottom: 60px;
+        .hero-description {
+          font-family: 'Helvetica';
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 120%;
+          color: $accentBlue;
+        }
       }
       .btn-container {
-        margin-bottom: 65px;
+        margin-bottom: 67px;
         .hero-btn-1 {
-          @include standartBtn($accentBlue1);
-          margin-bottom: 20px;
+          @include standartBtn($accentBlue);
+          margin-bottom: 40px;
         }
         .hero-btn-2 {
-          @include standartBtn($accentRed);
+          @include standartBtn($accentYellow);
         }
       }
       .skills-container {
         position: relative;
-        width: 244px;
+        width: 228px;
         .discount {
           position: absolute;
           right: -75px;
-          top: -25px;
+          top: 0;
           font-family: 'Philosopher';
           font-weight: 700;
           font-size: 48px;
           line-height: 120%;
-          color: $accentBlue1;
+          color: #ffffff;
         }
         .skills-list {
           padding: 20px;
           padding-right: 10px;
-          background-color: $accentRedShape;
+          background-color: $accentYellowShape;
           background-blend-mode: darken;
           li {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             &:last-child {
               margin-bottom: 0;
             }
             p {
               font-family: 'Helvetica';
-              font-size: 27px;
+              font-weight: 400;
+              font-size: 24px;
               line-height: 33px;
               color: #ffffff;
             }
           }
         }
       }
+      .social-links-list {
+        position: absolute;
+        bottom: 31px;
+        right: 25px;
+        li {
+          display: block;
+
+          margin-bottom: 30px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          .icon {
+            width: 35px;
+            height: 35px;
+            fill: $accentBlue;
+          }
+          a:hover .icon {
+            fill: $accentYellow;
+          }
+        }
+      }
+    }
+    .radial-gradient-shape {
+      position: absolute;
+      width: 535px;
+      height: 771px;
+      right: 41px;
+      top: -179px;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      z-index: -1;
     }
   }
 }
 
 @media screen and(min-width: $tablet) {
   .hero-section {
-    background-image: url('../img/hero-image.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     .wrapper {
       padding-top: 40px;
       .hero-title {
@@ -77,32 +141,41 @@
         display: block;
         margin-bottom: 40px;
       }
-      .hero-description-1 {
-        width: 430px;
+      .text-container {
+        width: 420px;
+        margin-right: 0;
+      }
+      .hero-description {
+        width: 420px;
         display: block;
         font-family: 'Helvetica';
         font-size: 24px;
         line-height: 150%;
-        color: $accentBlue2;
+        color: $accentBlue;
       }
-      .hero-description-2 {
-        width: 470px;
-        margin-bottom: 70px;
-      }
+
       .flex-wrap-container {
         display: flex;
       }
       .btn-container {
-        width: 470px;
+        width: 440px;
+        margin-bottom: 67px;
+        display: block;
+        .hero-btn-1 {
+          @include standartBtn($accentBlue);
+          margin-bottom: 40px;
+        }
+        .hero-btn-2 {
+          @include standartBtn($accentYellow);
+        }
       }
       .hero-btn-1 {
         margin-bottom: 30px;
       }
       .skills-container {
-        margin-left: 24px;
         .discount {
-          right: 0px;
-          top: -25px;
+          right: -20px;
+          top: -30px;
           font-weight: 400;
           font-size: 60px;
           color: white;
@@ -123,26 +196,74 @@
           }
         }
       }
+      .social-links-list {
+        right: 15px;
+      }
+    }
+    .radial-gradient-shape {
+      right: 310px;
+      top: -200px;
     }
   }
 }
 
 @media screen and(min-width: $desktop) {
   .hero-section {
+    background-size: cover;
+    background-position: center;
     .wrapper {
       padding-top: 70px;
+      .link-email {
+        top: 20px;
+        right: 0;
+        p {
+          font-size: 24px;
+        }
+      }
+      .link-phone {
+        position: absolute;
+        right: 0;
+        top: 56px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 15px;
+          fill: $accentBlue;
+        }
+        p {
+          font-family: 'Helvetica';
+          font-size: 24px;
+          line-height: 140%;
+          color: $accentBlue;
+        }
+        &:hover p {
+          color: $accentYellow;
+        }
+        &:hover svg {
+          fill: $accentYellow;
+        }
+      }
       .hero-title {
-        font-size: 64px;
-        width: 750px;
+        width: 740px;
+        font-size: 58px;
+        span {
+          display: inline;
+        }
+      }
+      .text-container {
+        .hero-description {
+          font-size: 24px;
+        }
       }
       .content-container {
         width: 700px;
         .text-container {
           width: 600px;
-          .hero-description-1 {
-            display: inline;
-          }
-          .hero-description-2 {
+          margin-bottom: 0;
+          .hero-description {
             display: inline;
           }
         }
@@ -150,8 +271,10 @@
       .btn-container {
         width: inherit;
         margin-top: 90px;
+        margin-bottom: 0;
         .hero-btn-1 {
           margin-right: 30px;
+          margin-bottom: 0;
         }
       }
       .skills-container {
@@ -165,6 +288,7 @@
         .skills-list {
           li {
             padding-left: 50px;
+            // margin-bottom: 20px;
             &:last-child {
               padding-bottom: 75px;
             }
@@ -174,19 +298,47 @@
           }
         }
       }
+      .social-links-list {
+        display: flex;
+        top: 21px;
+        right: 250px;
+        li {
+          width: 35px;
+          height: 35px;
+          margin-bottom: 0;
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+    .radial-gradient-shape {
+      width: 1000px;
+      height: 800px;
     }
   }
 }
 
 @media screen and (min-width: $fullHD) {
   .hero-section {
-    height: 1080px;
+    padding-top: 40px;
+    height: 1012px;
     .wrapper {
-      padding-top: 100px;
+      padding-top: 0;
+      .link-email {
+        top: 0;
+        right: 21px;
+      }
+      .link-phone {
+        right: 21px;
+        top: 45px;
+      }
       .hero-title {
-        width: 1058px;
+        width: 1074px;
         font-size: 96px;
         line-height: 108px;
+        padding-top: 60px;
         margin-bottom: 26px;
       }
       .content-container {
@@ -194,27 +346,22 @@
         padding-top: 34px;
         .text-container {
           width: 775px;
-          .hero-description-1 {
-            font-size: 32px;
-            line-height: 140%;
-          }
-          .hero-description-2 {
-            margin-bottom: 143px;
+          margin-bottom: 0;
+          .hero-description {
             font-size: 32px;
             line-height: 140%;
           }
         }
       }
       .btn-container {
-        margin-top: 90px;
+        margin-top: 143px;
         margin-bottom: 0;
         .hero-btn-1 {
-          @include fullHDBtn(441px, $accentBlue1);
+          @include fullHDBtn(441px, $accentBlue);
           margin-right: 60px;
-          margin-bottom: 0;
         }
         .hero-btn-2 {
-          @include fullHDBtn(355px, $accentRed);
+          @include fullHDBtn(355px, $accentYellow);
         }
       }
       .skills-container {
@@ -228,7 +375,7 @@
           top: -128px;
         }
         .skills-list {
-          padding: 72px 0 196px 93px;
+          padding: 72px 0 197px 93px;
           li {
             padding-left: 0;
             margin-bottom: 20px;
@@ -245,6 +392,26 @@
           }
         }
       }
+      .social-links-list {
+        top: 11px;
+        right: 290px;
+        li {
+          margin-right: 50px;
+          .icon {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .radial-gradient-shape {
+      width: 1141px;
+      height: 902px;
+      top: -222px;
+      left: -223px;
+      background: rgba(255, 255, 255, 0.781);
+      filter: blur(400px);
+      background-position: 10% bottom;
     }
   }
 }

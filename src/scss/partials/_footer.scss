@@ -1,12 +1,11 @@
 @media screen and (min-width: $mobile) {
   .footer {
-    padding-bottom: 92px;
+    padding-bottom: 41px;
     .wrapper {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     .rights-container {
-      margin-bottom: 51.6px;
       .description {
         font-family: 'Helvetica';
         font-style: normal;
@@ -14,16 +13,20 @@
         font-size: 16px;
         line-height: 150%;
         text-align: center;
-        color: $accentBlue1;
+        color: $accentBlue;
       }
     }
     .logo-container {
       display: flex;
       justify-content: center;
+      margin-bottom: 10px;
       .icon {
         width: 138px;
-        height: 34px;
+        height: 41px;
       }
+    }
+    .social-links-list {
+      display: none;
     }
   }
 }
@@ -47,12 +50,34 @@
 @media screen and(min-width: $desktop) {
   .footer {
     padding-top: 100px;
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
     .rights-container {
       width: 400px;
-      margin-left: auto;
-      margin-right: auto;
       .description {
         font-size: 20px;
+      }
+    }
+    .social-links-list {
+      display: flex;
+      top: 21px;
+      right: 250px;
+      li {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0;
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+        .icon {
+          width: 35px;
+          height: 35px;
+          fill: $accentYellow;
+        }
       }
     }
   }
@@ -60,12 +85,12 @@
 
 @media screen and(min-width: $fullHD) {
   .footer {
-    padding-top: 0;
+    padding-top: 100px;
     padding-bottom: 60px;
     .logo-container {
       .icon {
-        width: 258px;
-        height: 61px;
+        width: 338px;
+        height: 80px;
       }
     }
     .rights-container {
@@ -73,6 +98,15 @@
       .description {
         font-size: 24px;
         line-height: 150%;
+      }
+    }
+    .social-links-list {
+      li {
+        margin-right: 80px;
+        .icon {
+          width: 60px;
+          height: 60px;
+        }
       }
     }
   }

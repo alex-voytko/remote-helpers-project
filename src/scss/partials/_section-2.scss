@@ -1,51 +1,57 @@
 @media screen and (min-width: $mobile) {
   .section-2 {
-    margin-bottom: 77px;
-    .img-container {
-      display: none;
-    }
+    position: relative;
     .content-flex-container {
       display: flex;
       .description-container {
-        width: 234px;
-        padding-top: 33px;
+        width: 228px;
+        padding-top: 67px;
         padding-bottom: 33px;
-        margin-right: 10px;
         .title {
+          width: 230px;
           font-family: 'Philosopher';
           font-size: 24px;
           line-height: 1.21;
-          color: $accentRed;
-          margin-bottom: 14px;
+          color: $accentYellow;
+          margin-bottom: 40px;
         }
         .description {
+          width: 218px;
           font-family: 'Helvetica';
           font-size: 16px;
-          line-height: 1.69;
-          color: $accentBlue3;
+          line-height: 170%;
+          color: $accentBlue;
+          &__full-hd {
+            display: none;
+          }
         }
       }
       .stats-container {
+        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
-        background-color: $accentRedShape;
+        padding-top: 130px;
+        padding-bottom: 226px;
+        background-color: $accentYellowShape;
         .stats-list {
-          width: 100%;
           li {
-            margin-bottom: 20px;
+            margin-bottom: 13px;
             p {
               padding-left: 3px;
               font-family: 'Helvetica';
               font-size: 16px;
-              line-height: 120%;
+              line-height: 170%;
               color: white;
             }
             p:first-child {
+              font-family: 'Helvetica';
               font-size: 44px;
               color: transparent;
+              line-height: 170%;
               -webkit-text-stroke: 1px white;
-              margin-bottom: 3px;
+              margin-bottom: -14px;
+              font-style: normal;
+              font-weight: 400;
             }
             &:last-child {
               margin-bottom: 0;
@@ -59,11 +65,11 @@
     }
     .you-can-trust-container {
       position: relative;
-      width: 244px;
-      padding: 35px 11px 67px 11px;
-      background-color: $accentRedShape;
-      margin-bottom: 20px;
+      width: 219px;
+      padding: 35px 11px 62px 11px;
+      background-color: $accentYellowShape;
       .description {
+        width: 197px;
         font-family: 'Helvetica';
         font-size: 16px;
         line-height: 170%;
@@ -71,71 +77,63 @@
       }
       .title {
         position: absolute;
-        left: 54px;
+        left: 42px;
         bottom: 19px;
         font-family: 'Philosopher';
         font-size: 24px;
         line-height: 27px;
         white-space: nowrap;
         color: #ffffff;
-        span {
-          color: $accentRed;
-        }
       }
     }
-    .descr-container {
-      p {
-        font-family: 'Helvetica';
-        font-size: 16px;
-        line-height: 170%;
-        color: $accentBlue3;
-        margin-bottom: 20px;
-        &:last-child {
-          margin-bottom: 40px;
-        }
+    .img-container {
+      position: absolute;
+      width: 100vw;
+      top: 540px;
+      z-index: -1;
+      .img-contain {
+        width: 100vw;
+        height: 339px;
+        left: -15px;
+        background-image: url('../img/deal.jpg');
+        background-repeat: no-repeat;
+        background-size: 724px 339px;
+        background-size: cover;
+        background-position: 30% bottom;
       }
     }
-    .section-2-btn {
-      @include standartBtn($accentBlue1);
+    .btn-container {
+      display: none;
     }
   }
 }
 
 @media screen and (min-width: $tablet) {
   .section-2 {
-    margin-bottom: 100px;
     .wrapper {
       position: relative;
     }
-    .img-container {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      position: absolute;
-      top: 390px;
-      z-index: -1;
-      .img-contain {
-        width: 600px;
-        height: 281px;
-        background-image: url('../img/working-process.jpg');
-        background-size: contain;
-      }
-    }
     .content-flex-container {
-      margin-bottom: 60px;
+      margin-bottom: 10px;
       .description-container {
-        width: 470px;
-        margin-right: 24px;
+        width: 420px;
+        margin-right: 20px;
         padding-top: 70px;
         .title {
+          width: 420px;
           font-size: 38px;
           span {
             display: block;
           }
         }
+        .description {
+          width: 420px;
+        }
       }
       .stats-container {
-        width: 244px;
+        width: 228px;
+        padding-top: 0;
+        padding-bottom: 20px;
         .stats-list {
           width: 100%;
           li {
@@ -161,12 +159,14 @@
       display: flex;
     }
     .you-can-trust-container {
+      width: 268px;
+      padding: 50px 11px 40px 31px;
       margin-bottom: 0;
-      padding: 85px 11px 40px 31px;
+      margin-right: 67px;
       .title {
         position: static;
         font-size: 38px;
-        margin-bottom: 265px;
+        margin-bottom: 70px;
         span {
           display: block;
           padding-top: 12px;
@@ -174,19 +174,19 @@
         }
       }
     }
-    .descr-container {
-      padding-left: 30px;
-      padding-top: 170px;
-      p:nth-child(3) {
-        margin-bottom: 50px;
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      .btn {
+        @include standartBtn($accentBlue);
+        margin: 0;
       }
-      .btn-container {
-        display: flex;
-        justify-content: center;
-        .section-2-btn {
-          display: block;
-          margin: 0;
-        }
+    }
+    .img-container {
+      top: 440px;
+      .img-contain {
+        background-position: 30% top;
       }
     }
   }
@@ -194,7 +194,6 @@
 
 @media screen and (min-width: $desktop) {
   .section-2 {
-    margin-bottom: 120px;
     .img-container {
       top: 500px;
       .img-contain {
@@ -209,16 +208,19 @@
         margin-right: 50px;
         padding-top: 100px;
         .title {
+          width: 560px;
           font-size: 48px;
           margin-bottom: 30px;
         }
         .description {
-          font-size: 20px;
+          width: 700px;
+          font-size: 24px;
           padding-left: 100px;
         }
       }
       .stats-container {
         width: 350px;
+        padding-bottom: 100px;
         .stats-list {
           li {
             padding-left: 20px;
@@ -248,14 +250,16 @@
       padding-left: 40px;
     }
     .you-can-trust-container {
-      width: 350px;
+      width: 420px;
       padding: 60px 30px 40px 31px;
+      margin-right: 210px;
       .description {
-        font-size: 20px;
+        width: 380px;
+        font-size: 24px;
       }
       .title {
-        font-size: 38px;
-        margin-bottom: 350px;
+        font-size: 48px;
+        margin-bottom: 140px;
         span {
           display: block;
           padding-top: 20px;
@@ -263,11 +267,13 @@
         }
       }
     }
-    .descr-container {
-      padding: 220px 0 0 50px;
-      width: 500px;
-      p {
-        font-size: 20px;
+    .img-container {
+      top: 530px;
+      left: 50%;
+      .img-contain {
+        width: 910px;
+        height: 426px;
+        transform: translateX(-50%);
       }
     }
   }
@@ -275,7 +281,6 @@
 
 @media screen and (min-width: $fullHD) {
   .section-2 {
-    margin-bottom: 160px;
     .img-container {
       top: 660px;
       .img-contain {
@@ -284,24 +289,35 @@
       }
     }
     .content-flex-container {
-      margin-bottom: 83px;
+      margin-bottom: -10px;
       .description-container {
         width: 975px;
         margin-right: 61px;
-        padding-top: 109px;
+        padding-top: 111px;
+        padding-left: 72px;
         .title {
-          padding-left: 1px;
+          width: 747px;
           font-size: 64px;
           line-height: 72px;
           margin-bottom: 80px;
+          text-align: right;
         }
         .description {
-          font-size: 24px;
-          padding-left: 311px;
+          display: none;
+          &__full-hd {
+            font-family: 'Helvetica';
+            display: block;
+            width: 920px;
+            font-size: 24px;
+            line-height: 170%;
+            padding-left: 278px;
+            color: $accentBlue;
+          }
         }
       }
       .stats-container {
         width: 560px;
+        padding-bottom: 179px;
         .stats-list {
           li {
             margin-bottom: -79px;
@@ -312,7 +328,7 @@
               &:first-child {
                 font-size: 144px;
                 line-height: 170%;
-                -webkit-text-stroke: 2px white;
+                -webkit-text-stroke: 3px white;
               }
               &:last-child {
                 margin-left: 0;
@@ -331,7 +347,7 @@
               }
             }
             &:last-child {
-              padding: 0 0 179px 86px;
+              padding: 0 0 0 86px;
               p:first-child {
                 margin-right: 33px;
               }
@@ -341,41 +357,37 @@
       }
     }
     .trust-flex-container {
-      padding-left: 173px;
+      padding-left: 151px;
     }
     .you-can-trust-container {
-      width: 560px;
-      padding: 133px 0px 90px 140px;
+      width: 540px;
+      padding: 177px 0px 60px 95px;
+      margin-right: 230px;
       .description {
-        width: 330px;
-        // padding: inherit 90px inherit 56px;
-        padding-left: 56px;
+        width: 378px;
+        padding-left: 104px;
         font-size: 24px;
         line-height: 170%;
       }
       .title {
         font-size: 64px;
         line-height: 72px;
-        margin-bottom: 433px;
+        margin-bottom: 40px;
         span {
           padding-top: 0;
         }
       }
     }
-    .descr-container {
-      padding: 260px 0 0 60px;
-      width: 673px;
-      display: block;
-      p {
-        font-size: 24px;
-        line-height: 170%;
-        &:nth-child(3) {
-          margin-bottom: 80px;
-        }
+    .img-container {
+      .img-contain {
+        width: 1016px;
+        height: 476px;
       }
     }
-    .section-2-btn {
-      @include fullHDBtn(441px, $accentBlue1);
+    .btn-container {
+      .btn {
+        @include fullHDBtn(441px, $accentBlue);
+      }
     }
   }
 }

@@ -1,13 +1,13 @@
 @media screen and (min-width: $mobile) {
-  .section-6 {
-    padding: 10px 0 123px 0;
+  .section-8 {
+    padding-bottom: 60px;
     .title {
       width: 100%;
       display: block;
       font-family: 'Philosopher';
       font-size: 24px;
       line-height: 27px;
-      color: $accentRed;
+      color: $accentYellow;
       margin-bottom: 20px;
       span {
         display: block;
@@ -27,7 +27,7 @@
           font-weight: 400;
           font-size: 16px;
           line-height: 150%;
-          color: $accentBlue1;
+          color: $accentBlue;
         }
       }
       .form {
@@ -59,8 +59,8 @@
             }
           }
         }
-        .btn {
-          @include standartBtn($accentRed);
+        button {
+          @include standartBtn($accentYellow);
           width: 290px;
         }
       }
@@ -69,7 +69,8 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .section-6 {
+  .section-8 {
+    padding-bottom: 90px;
     .title {
       font-size: 38px;
       text-align: center;
@@ -88,7 +89,7 @@
           width: 250px;
           height: 618px;
           z-index: -1;
-          background-color: $accentRedShape;
+          background-color: $accentYellowShape;
           background-blend-mode: darken;
         }
         .img-contain {
@@ -117,7 +118,7 @@
         display: block;
         width: 355px;
         justify-content: space-between;
-        .btn {
+        button {
           width: 315px;
         }
       }
@@ -126,7 +127,7 @@
 }
 
 @media screen and(min-width: $desktop) {
-  .section-6 {
+  .section-8 {
     padding-bottom: 170px;
     .title {
       font-size: 48px;
@@ -193,7 +194,7 @@
 }
 
 @media screen and(min-width: $fullHD) {
-  .section-6 {
+  .section-8 {
     padding-bottom: 423px;
     .title {
       font-size: 64px;
@@ -246,8 +247,8 @@
             }
           }
         }
-        .btn {
-          @include fullHDBtn(312px, $accentRed);
+        button {
+          @include fullHDBtn(312px, $accentYellow);
         }
       }
     }

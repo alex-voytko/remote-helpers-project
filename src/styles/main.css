@@ -136,15 +136,16 @@ select {
 
 @media screen and (min-width: 360px) {
   .hero-section {
+    position: relative;
     background-image: url("../img/hero-image.jpg");
     background-repeat: no-repeat;
     background-size: 1566px 880px;
     background-position: 60% top;
+    isolation: isolate;
   }
   .hero-section .wrapper {
     position: relative;
     padding-top: 50px;
-    z-index: 1;
   }
   .hero-section .wrapper .link-email {
     position: absolute;
@@ -220,7 +221,7 @@ select {
     inset: 0;
     z-index: -1;
     background-color: rgba(252, 202, 12, 0.6);
-    mix-blend-mode: multiply;
+    mix-blend-mode: darken;
   }
   .hero-section .wrapper .skills-container .discount {
     position: absolute;

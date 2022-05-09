@@ -27,8 +27,15 @@
         height: inherit;
         left: -15px;
         padding-left: 70px;
-        background-color: $accentYellowShape;
         padding-bottom: 44px;
+        &::after {
+          content: '';
+          position: absolute;
+          inset: 0 0 0 -15px;
+          z-index: -1;
+          background-color: $accentYellowShape;
+          mix-blend-mode: darken;
+        }
         li {
           p {
             color: transparent;
@@ -83,8 +90,8 @@
     .img-container {
       position: absolute;
       top: 112px;
-      left: -231px;
-      z-index: -1;
+      left: -238px;
+      z-index: -2;
       .img-contain {
         width: 286px;
         height: 620px;

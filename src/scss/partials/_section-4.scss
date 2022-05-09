@@ -227,15 +227,15 @@
 
 @media screen and(min-width: $fullHD) {
   .section-4 {
+    position: relative;
     height: 1000px;
     padding-top: 60px;
     padding-bottom: 0;
-    background-size: 1920px 1000px;
+    background-size: cover;
     background-position: center;
-    isolation: isolate;
+    z-index: -3;
     .wrapper {
       position: relative;
-      z-index: 1;
     }
     .title {
       width: 1016px;
@@ -309,15 +309,21 @@
     }
     .yellow-shape-container {
       position: absolute;
-      width: 352px;
+      width: 365px;
       height: 1000px;
       display: block;
       top: -60px;
       right: 312px;
-      z-index: -1;
-      background: $accentYellowShape;
-      background-blend-mode: darken;
-      mix-blend-mode: darken;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 365px;
+        height: 1000px;
+        inset: 0;
+        z-index: -1;
+        background-color: $accentYellowShape;
+        mix-blend-mode: darken;
+      }
       .discount {
         position: absolute;
         top: 123px;

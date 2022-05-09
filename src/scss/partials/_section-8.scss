@@ -90,7 +90,7 @@
           height: 618px;
           z-index: -1;
           background-color: $accentYellowShape;
-          background-blend-mode: darken;
+          mix-blend-mode: darken;
         }
         .img-contain {
           position: absolute;

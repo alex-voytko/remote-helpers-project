@@ -211,6 +211,12 @@
             span {
               display: inline;
             }
+            &::before {
+              content: '\201C';
+            }
+            &::after {
+              content: '\201D';
+            }
           }
           &__read-more {
             display: none;
@@ -299,12 +305,6 @@
             width: 415px;
             font-size: 24px;
             line-height: 170%;
-            &::before {
-              content: '\201C';
-            }
-            &::after {
-              content: '\201D';
-            }
           }
         }
         &:first-child {

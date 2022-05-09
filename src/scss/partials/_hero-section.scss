@@ -1,14 +1,13 @@
 @media screen and (min-width: $mobile) {
   .hero-section {
-    position: relative;
     background-image: url('../img/hero-image.jpg');
     background-repeat: no-repeat;
     background-size: 1566px 880px;
     background-position: 60% top;
-    z-index: -3;
     .wrapper {
       position: relative;
       padding-top: 50px;
+      z-index: 1;
       .link-email {
         position: absolute;
         right: 15px;
@@ -106,7 +105,6 @@
         right: 25px;
         li {
           display: block;
-
           margin-bottom: 30px;
           &:last-child {
             margin-bottom: 0;

@@ -233,7 +233,7 @@
     padding-bottom: 0;
     background-size: cover;
     background-position: center;
-    z-index: -3;
+    isolation: isolate;
     .wrapper {
       position: relative;
     }

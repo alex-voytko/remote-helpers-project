@@ -36,8 +36,12 @@
               </div>
 
               <div class="btn-container">
-                <button class="hero-btn-1">Get free consultation</button>
-                <button class="hero-btn-2">Find a specialist</button>
+                <button class="hero-btn-1" formaction="#form-submit">
+                  <a href="#get-free-consultation">Get free consultation</a>
+                </button>
+                <button class="hero-btn-2">
+                  <a href="#get-free-consultation">Find a specialist</a>
+                </button>
               </div>
             </div>
             <div class="skills-container">
@@ -125,7 +129,9 @@
               </p>
             </div>
             <div class="btn-container">
-              <button class="btn">Get free consultation</button>
+              <button class="btn">
+                <a href="#get-free-consultation">Get free consultation</a>
+              </button>
             </div>
           </div>
         </div>
@@ -186,7 +192,9 @@
             </li>
           </ul>
           <div class="btn-container">
-            <button class="btn">Get free consultation</button>
+            <button class="btn">
+              <a href="#get-free-consultation">Get free consultation</a>
+            </button>
           </div>
         </div>
       </section>
@@ -252,7 +260,9 @@
               </ul>
             </div>
           </div>
-          <button class="btn">Find a specialist</button>
+          <button class="btn">
+            <a href="#get-free-consultation">Find a specialist</a>
+          </button>
           <div class="yellow-shape-container">
             <p class="discount">10%off</p>
           </div>
@@ -295,7 +305,9 @@
                   </p>
                 </li>
               </ul>
-              <button class="btn">Make first step</button>
+              <button class="btn">
+                <a href="#get-free-consultation">Make first step</a>
+              </button>
             </div>
             <ul class="number-list">
               <li><p class="descr">1.</p></li>
@@ -452,7 +464,7 @@
           </ul>
         </div>
       </section>
-      <section class="section-8">
+      <section class="section-8" id="get-free-consultation">
         <div class="wrapper">
           <h2 class="title">
             Leave your contacts to get <span>free consultation</span>
@@ -473,22 +485,36 @@
               <div class="label-container">
                 <label>
                   Name*
-                  <input type="text" placeholder="Harold Lewis" />
+                  <input name="name" type="text" placeholder="Harold Lewis" />
                 </label>
                 <label>
                   E-mail*
-                  <input type="text" placeholder="haroldlewis@mail.com" />
+                  <input
+                    name="email"
+                    type="text"
+                    placeholder="haroldlewis@mail.com"
+                  />
                 </label>
                 <label>
                   Phone number*
-                  <input type="text" placeholder="+19779269925809" />
+                  <input
+                    name="phone"
+                    type="text"
+                    placeholder="+19779269925809"
+                  />
                 </label>
                 <label>
                   Better time for call*
-                  <input type="text" placeholder="2 p.m. - 5 p.m." />
+                  <input
+                    name="call-time"
+                    type="text"
+                    placeholder="2 p.m. - 5 p.m."
+                  />
                 </label>
               </div>
-              <button class="btn" type="submit">Submit</button>
+              <button name="submit-btn" class="btn" type="submit">
+                Submit
+              </button>
             </form>
           </div>
         </div>

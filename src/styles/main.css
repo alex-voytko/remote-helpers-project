@@ -13,7 +13,7 @@
 }
 
 html {
-  background: #fff;
+  background: white;
 }
 
 ul[class],
@@ -31,6 +31,16 @@ a {
 button:hover,
 a:hover {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button a {
+  width: inherit;
+  height: inherit;
 }
 
 body,
@@ -195,21 +205,33 @@ select {
   .hero-section .wrapper .btn-container .hero-btn-1 {
     width: 330px;
     height: 60px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
     margin-bottom: 40px;
+  }
+  .hero-section .wrapper .btn-container .hero-btn-1 a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .hero-section .wrapper .btn-container .hero-btn-2 {
     width: 330px;
     height: 60px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
+  }
+  .hero-section .wrapper .btn-container .hero-btn-2 a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .hero-section .wrapper .skills-container {
     position: relative;
@@ -315,21 +337,33 @@ select {
   .hero-section .wrapper .btn-container .hero-btn-1 {
     width: 330px;
     height: 60px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
     margin-bottom: 40px;
+  }
+  .hero-section .wrapper .btn-container .hero-btn-1 a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .hero-section .wrapper .btn-container .hero-btn-2 {
     width: 330px;
     height: 60px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
+  }
+  .hero-section .wrapper .btn-container .hero-btn-2 a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .hero-section .wrapper .hero-btn-1 {
     margin-bottom: 30px;
@@ -519,21 +553,33 @@ select {
   .hero-section .wrapper .btn-container .hero-btn-1 {
     width: 441px;
     height: 81px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 36px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
     margin-right: 60px;
+  }
+  .hero-section .wrapper .btn-container .hero-btn-1 a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .hero-section .wrapper .btn-container .hero-btn-2 {
     width: 355px;
     height: 81px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 36px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
+  }
+  .hero-section .wrapper .btn-container .hero-btn-2 a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .hero-section .wrapper .skills-container {
     margin-left: 176px;
@@ -794,12 +840,18 @@ select {
   .section-2 .btn-container .btn {
     width: 330px;
     height: 60px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
     margin: 0;
+  }
+  .section-2 .btn-container .btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .section-2 .img-container {
     top: 440px;
@@ -995,11 +1047,17 @@ select {
   .section-2 .btn-container .btn {
     width: 441px;
     height: 81px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 36px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
+  }
+  .section-2 .btn-container .btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -1079,11 +1137,17 @@ select {
   .section-3 .btn-container .btn {
     width: 330px;
     height: 60px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
+  }
+  .section-3 .btn-container .btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -1242,11 +1306,17 @@ select {
   .section-3 .btn-container .btn {
     width: 441px;
     height: 81px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 36px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
+  }
+  .section-3 .btn-container .btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -1366,11 +1436,17 @@ select {
   .section-4 .btn {
     width: 330px;
     height: 60px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
+  }
+  .section-4 .btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .section-4 .yellow-shape-container {
     display: none;
@@ -1496,7 +1572,7 @@ select {
     padding-bottom: 0;
     background-size: cover;
     background-position: center;
-    z-index: -3;
+    isolation: isolate;
   }
   .section-4 .wrapper {
     position: relative;
@@ -1571,11 +1647,17 @@ select {
     bottom: 388px;
     width: 361px;
     height: 81px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 36px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
+  }
+  .section-4 .btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .section-4 .yellow-shape-container {
     position: absolute;
@@ -1703,11 +1785,17 @@ select {
   .section-5 .btn {
     width: 330px;
     height: 60px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
+  }
+  .section-5 .btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .section-5 .img-container {
     position: absolute;
@@ -1868,11 +1956,17 @@ select {
     margin-left: 0;
     width: 333px;
     height: 81px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 36px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
+  }
+  .section-5 .steps-container .btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
   .section-5 .img-container {
     display: none;
@@ -2319,12 +2413,18 @@ select {
   .section-8 .main-content-container .form button {
     width: 330px;
     height: 60px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
     width: 290px;
+  }
+  .section-8 .main-content-container .form button a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -2531,11 +2631,17 @@ select {
   .section-8 .main-content-container .form button {
     width: 312px;
     height: 81px;
-    background-color: #fcca0c;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 36px;
     line-height: 170%;
+    background-color: #fcca0c;
+    color: #fff;
+  }
+  .section-8 .main-content-container .form button a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -2722,14 +2828,20 @@ select {
     margin-right: auto;
     width: 330px;
     height: 60px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
     width: 100px;
     height: 40px;
     font-size: 16px;
+  }
+  .modal .modal-btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -2756,12 +2868,18 @@ select {
   .modal .modal-btn {
     width: 330px;
     height: 60px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 27.3469px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
     width: 200px;
+  }
+  .modal .modal-btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 
@@ -2780,11 +2898,17 @@ select {
   .modal .modal-btn {
     width: 200px;
     height: 81px;
-    background-color: #23329a;
-    color: white;
     font-family: 'Helvetica-bold';
     font-size: 36px;
     line-height: 170%;
+    background-color: #23329a;
+    color: #fff;
+  }
+  .modal .modal-btn a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -9,7 +9,7 @@
   }
 }
 html {
-  background: #fff;
+  background: rgb(255, 255, 255);
 }
 ul[class],
 ol[class] {
@@ -22,6 +22,17 @@ a {
   margin: 0;
   &:hover {
     cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+button {
+  a {
+    width: inherit;
+    height: inherit;
   }
 }
 

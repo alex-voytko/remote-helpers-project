@@ -14,20 +14,32 @@ $fullHD: 1920px;
 @mixin standartBtn($bc) {
   width: 330px;
   height: 60px;
-  background-color: $bc;
-  color: rgb(255, 255, 255);
   font-family: 'Helvetica-bold';
   font-size: 27.3469px;
   line-height: 170%;
+  background-color: $bc;
+  color: #fff;
+  a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 @mixin fullHDBtn($w, $bc) {
   width: $w;
   height: 81px;
-  background-color: $bc;
-  color: white;
   font-family: 'Helvetica-bold';
   font-size: 36px;
   line-height: 170%;
+  background-color: $bc;
+  color: #fff;
+  a {
+    width: inherit;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
+  }
 }
 @mixin sliderButtons($w, $h, $leftUrl, $rightUrl) {
   display: flex;

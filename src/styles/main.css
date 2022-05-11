@@ -2667,6 +2667,23 @@ select {
     text-align: center;
     color: #23329a;
   }
+  .footer .rights-container a {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: block;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #23329a;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer .rights-container a:hover {
+    text-decoration: underline;
+  }
   .footer .logo-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2726,6 +2743,9 @@ select {
   .footer .rights-container .description {
     font-size: 20px;
   }
+  .footer .rights-container a {
+    font-size: 20px;
+  }
   .footer .social-links-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2764,6 +2784,9 @@ select {
   .footer .rights-container .description {
     font-size: 24px;
     line-height: 150%;
+  }
+  .footer .rights-container a {
+    font-size: 24px;
   }
   .footer .social-links-list li {
     margin-right: 80px;

@@ -6,6 +6,9 @@
       flex-direction: column-reverse;
     }
     .rights-container {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
       .description {
         font-family: 'Helvetica';
         font-style: normal;
@@ -14,6 +17,21 @@
         line-height: 150%;
         text-align: center;
         color: $accentBlue;
+      }
+      a {
+        width: fit-content;
+        display: block;
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $accentBlue;
+        margin-right: auto;
+        margin-left: auto;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
     .logo-container {
@@ -60,6 +78,9 @@
       .description {
         font-size: 20px;
       }
+      a {
+        font-size: 20px;
+      }
     }
     .social-links-list {
       display: flex;
@@ -98,6 +119,9 @@
       .description {
         font-size: 24px;
         line-height: 150%;
+      }
+      a {
+        font-size: 24px;
       }
     }
     .social-links-list {

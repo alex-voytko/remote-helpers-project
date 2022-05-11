@@ -117,9 +117,6 @@
         background-position: 30% bottom;
       }
     }
-    .btn-container {
-      display: none;
-    }
   }
 }
 
@@ -189,15 +186,6 @@
         }
       }
     }
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      .btn {
-        @include standartBtn($accentBlue);
-        margin: 0;
-      }
-    }
     .img-container {
       top: 440px;
       .img-contain {
@@ -223,7 +211,7 @@
         margin-right: 50px;
         padding-top: 100px;
         .title {
-          width: 560px;
+          width: 650px;
           font-size: 48px;
           margin-bottom: 30px;
         }
@@ -309,23 +297,23 @@
         width: 975px;
         margin-right: 61px;
         padding-top: 111px;
-        padding-left: 72px;
+        padding-left: 151px;
         .title {
-          width: 747px;
+          width: 1000px;
           font-size: 64px;
           line-height: 72px;
           margin-bottom: 80px;
-          text-align: right;
+          // text-align: right;
         }
         .description {
           display: none;
           &__full-hd {
             font-family: 'Helvetica';
             display: block;
-            width: 920px;
+            width: 848px;
             font-size: 24px;
             line-height: 170%;
-            padding-left: 278px;
+            padding-left: 199px;
             color: $accentBlue;
           }
         }
@@ -397,11 +385,6 @@
       .img-contain {
         width: 1016px;
         height: 476px;
-      }
-    }
-    .btn-container {
-      .btn {
-        @include fullHDBtn(441px, $accentBlue);
       }
     }
   }

@@ -147,6 +147,9 @@
         width: 600px;
         display: block;
         margin-bottom: 40px;
+        span {
+          display: inline;
+        }
       }
       .text-container {
         width: 420px;
@@ -256,9 +259,6 @@
       .hero-title {
         width: 740px;
         font-size: 58px;
-        span {
-          display: inline;
-        }
       }
       .text-container {
         .hero-description {

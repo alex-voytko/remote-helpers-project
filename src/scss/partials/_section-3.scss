@@ -18,7 +18,6 @@
       &__item {
         display: flex;
         margin-bottom: 52px;
-        flex-wrap: wrap;
         &:nth-last-child(1) {
           margin-bottom: 0;
         }
@@ -32,7 +31,7 @@
         margin-right: 10px;
         margin-bottom: 3px;
         p {
-          width: 67px;
+          width: 80px;
           font-family: 'Helvetica';
           font-style: normal;
           font-weight: 400;
@@ -43,33 +42,13 @@
           -webkit-text-stroke: 1px #fff;
         }
       }
-      &__title-container {
-        width: 200px;
-        display: inline;
-        padding-top: 7px;
-        margin-bottom: 22px;
-        h3 {
-          width: 107px;
-          font-family: 'Helvetica-bold';
-          font-size: 18px;
-          line-height: 120%;
-          color: $accentBlue;
-        }
-      }
       &__description-container {
-        padding-left: 60px;
         p {
           font-family: 'Helvetica';
           font-size: 16px;
           line-height: 150%;
           color: $accentBlue;
-          left: 15px;
         }
-      }
-    }
-    .btn-container {
-      .btn {
-        @include standartBtn($accentBlue);
       }
     }
   }
@@ -87,28 +66,17 @@
       display: flex;
       flex-wrap: wrap;
       &__item {
-        width: 300px;
+        width: 343px;
         &:nth-child(odd) {
           margin-right: 52px;
         }
         &:nth-child(3) {
           margin-bottom: 0;
-          .advantage-list__title-container {
-            height: 44px;
-          }
-          .advantage-list__description-container {
-            height: 91px;
-            p {
-              display: table-cell;
-              vertical-align: top;
-            }
-          }
         }
       }
-    }
-    .btn-container {
-      display: flex;
-      justify-content: center;
+      &__number-container {
+        margin-right: 25px;
+      }
     }
   }
 }
@@ -123,42 +91,27 @@
     .advantage-list {
       margin-bottom: 70px;
       &__item {
-        width: 500px;
+        width: 520px;
         &:nth-child(-n + 2) {
           margin-bottom: 70px;
         }
-        &:nth-child(3) {
-          .advantage-list__description-container {
-            margin-top: -105px;
-          }
+        &:nth-child(odd) {
+          margin-right: 60px;
         }
       }
       &__number-container {
         width: 140px;
         height: 126px;
-        background-size: contain;
+        background-size: cover;
+        background-position: center;
         margin-right: 25px;
         p {
+          width: 140px;
           font-size: 96px;
           padding-left: 40px;
         }
       }
-      &__title-container {
-        width: 320px;
-        margin-bottom: 0;
-        h3 {
-          width: inherit;
-          font-family: 'Philosopher';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 28px;
-          line-height: 150%;
-          color: #23329a;
-        }
-      }
       &__description-container {
-        padding-left: 165px;
-        margin-top: -70px;
         p {
           font-size: 24px;
         }
@@ -174,77 +127,39 @@
     .title {
       font-size: 64px;
       line-height: 72px;
-      text-align: right;
-      padding-right: 121px;
+      text-align: left;
+      padding-left: 151px;
       margin-bottom: 80px;
-      span {
-        display: block;
-      }
     }
     .advantage-list {
-      width: 1427px;
+      width: 1450px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 120px;
       &__item {
-        width: 641px;
-        &:nth-child(3) {
-          .advantage-list__description-container {
-            width: 631px;
-            margin-top: -123px;
-          }
-        }
+        width: 700px;
         &:nth-child(odd) {
-          margin-right: 145px;
-        }
-        &:nth-child(-n + 2) {
-          margin-bottom: 98.5px;
-          .advantage-list__description-container {
-            p {
-              width: 399px;
-            }
-          }
-        }
-        &:last-child {
-          .advantage-list__description-container {
-            p {
-              width: 400px;
-            }
-          }
+          margin-right: 50px;
         }
       }
       &__number-container {
         width: 187px;
         height: 195px;
+        background-size: contain;
         margin-right: 40px;
         p {
+          width: 187px;
           line-height: 170%;
           padding-left: 60px;
           -webkit-text-stroke: 2.6px #fff;
         }
       }
-      &__title-container {
-        width: 414px;
-        h3 {
-          width: inherit;
-          font-size: 36px;
-          line-height: 150%;
-        }
-      }
       &__description-container {
         width: 414px;
-        padding-left: 227px;
-        margin-top: -123px;
         p {
           width: inherit;
+          padding-top: 10px;
         }
-      }
-    }
-    .btn-container {
-      justify-content: end;
-      padding-right: 121px;
-      .btn {
-        @include fullHDBtn(441px, $accentBlue);
       }
     }
   }

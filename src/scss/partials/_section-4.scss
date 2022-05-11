@@ -42,7 +42,8 @@
           margin-bottom: 5px;
         }
         li {
-          padding-left: 10px;
+          width: inherit;
+          padding-left: 5px;
           margin-bottom: 5px;
         }
         p {
@@ -55,17 +56,25 @@
           &::before {
             content: '\2022';
             color: #ffffff;
-            margin-right: 12px;
+            margin-right: 7px;
+          }
+          span {
+            display: none;
           }
         }
         &__skills-list,
         &__work-to-be-done-list {
+          width: inherit;
           li:last-child {
             margin-bottom: 0;
           }
         }
         &__skills-container {
-          margin-right: 25px;
+          width: 144px;
+          margin-right: 20px;
+        }
+        &__work-to-be-done-container {
+          width: 100%;
         }
       }
       .prices-container {
@@ -187,6 +196,9 @@
         }
         p {
           font-size: 24px;
+          span {
+            display: inline;
+          }
         }
         &__skills-container {
           width: 300px;

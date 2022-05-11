@@ -1274,6 +1274,10 @@ select {
   .section-3 .advantage-list__item {
     width: 641px;
   }
+  .section-3 .advantage-list__item:nth-child(3) .advantage-list__description-container {
+    width: 631px;
+    margin-top: -123px;
+  }
   .section-3 .advantage-list__item:nth-child(odd) {
     margin-right: 145px;
   }

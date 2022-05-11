@@ -188,6 +188,12 @@
       margin-bottom: 120px;
       &__item {
         width: 641px;
+        &:nth-child(3) {
+          .advantage-list__description-container {
+            width: 631px;
+            margin-top: -123px;
+          }
+        }
         &:nth-child(odd) {
           margin-right: 145px;
         }

@@ -93,6 +93,16 @@
         }
         &:nth-child(3) {
           margin-bottom: 0;
+          .advantage-list__title-container {
+            height: 44px;
+          }
+          .advantage-list__description-container {
+            height: 91px;
+            p {
+              display: table-cell;
+              vertical-align: top;
+            }
+          }
         }
       }
     }
@@ -116,6 +126,11 @@
         width: 500px;
         &:nth-child(-n + 2) {
           margin-bottom: 70px;
+        }
+        &:nth-child(3) {
+          .advantage-list__description-container {
+            margin-top: -105px;
+          }
         }
       }
       &__number-container {

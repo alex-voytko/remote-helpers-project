@@ -11,9 +11,8 @@ function formZipSubmit(e) {
   addUserData(formData)
     .then(data => {
       console.log(data);
-      setTimeout(openThankYouModal, 2000);
+      setTimeout(openThankYouModal, 1000);
     })
     .catch(error => console.log(error.message));
-
   formRef.reset();
 }

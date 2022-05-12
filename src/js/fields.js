@@ -1,0 +1,47 @@
+export default [
+  {
+    type: 'text',
+    name: 'client_name',
+    placeholder: 'Your name',
+    required: true,
+    label: 'Name*',
+  },
+  {
+    type: 'email',
+    name: 'client_email',
+    placeholder: 'Email',
+    required: true,
+    label: 'E-mail*',
+  },
+  {
+    type: 'tel',
+    name: 'client_phone',
+    placeholder: '+xxxxxxxxxxxx',
+    required: true,
+    pattern: '',
+    label: 'Phone number*',
+  },
+  {
+    type: 'text',
+    name: 'note',
+    required: true,
+    placeholder: '2 p.m. - 5 p.m.',
+    label: 'Better time for call*',
+  },
+  {
+    type: 'text',
+    name: 'global_company_name',
+    placeholder: 'Your company',
+    required: false,
+    hidden: true,
+    value: 'Worksuite Demo Company',
+  },
+  {
+    type: 'text',
+    name: 'project_company',
+    placeholder: 'Your company',
+    required: false,
+    hidden: true,
+    value: 'RHS',
+  },
+];

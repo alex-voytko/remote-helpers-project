@@ -240,12 +240,20 @@
         &__first-string,
         &__second-string {
           display: flex;
-          justify-content: end;
+          align-items: center;
+          justify-content: right;
+          flex-wrap: wrap;
           .company-logo-view {
             margin-right: 50px;
-            &:last-child {
+            margin-bottom: 30px;
+            &:nth-child(4n) {
               margin-right: 0;
             }
+          }
+        }
+        &__first-string {
+          .company-logo-view:last-child {
+            margin-right: 0;
           }
         }
       }
@@ -264,22 +272,15 @@
       padding-right: 85px;
       margin-bottom: 156px;
       .logo-wrapper {
-        &__first-string {
-          margin-bottom: 39px;
-          .company-logo-view:first-child {
-            margin-right: 153px;
-          }
-          .company-logo-view:nth-child(2) {
-            margin-right: 86px;
-          }
-        }
         &__second-string {
-          .company-logo-view:first-child,
-          .company-logo-view:nth-child(2) {
-            margin-right: 166px;
-          }
-          .company-logo-view:nth-child(3) {
-            margin-right: 54px;
+          .company-logo-view {
+            margin-right: 60px;
+            &:nth-child(4n) {
+              margin-right: 50px;
+            }
+            &:nth-child(6n) {
+              margin-right: 0;
+            }
           }
         }
       }

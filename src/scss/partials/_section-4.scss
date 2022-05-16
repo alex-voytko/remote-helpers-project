@@ -27,7 +27,6 @@
       }
     }
     .content-flex-container {
-      margin-bottom: 60px;
       .candidate-container {
         display: flex;
         margin-bottom: 40px;
@@ -120,9 +119,6 @@
         }
       }
     }
-    .btn {
-      @include standartBtn($accentYellow);
-    }
     .yellow-shape-container {
       display: none;
     }
@@ -144,6 +140,7 @@
       justify-content: center;
       .candidate-container {
         margin-left: 50px;
+        margin-bottom: 0;
         h3 {
           width: 160px;
           font-size: 20px;
@@ -163,11 +160,6 @@
           }
         }
       }
-    }
-    .btn {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 }
@@ -266,7 +258,6 @@
     }
     .content-flex-container {
       justify-content: end;
-      margin-bottom: 0;
       .candidate-container {
         margin-left: 73px;
         margin-bottom: 0;
@@ -313,11 +304,6 @@
           }
         }
       }
-    }
-    .btn {
-      position: absolute;
-      bottom: 388px;
-      @include fullHDBtn(361px, $accentYellow);
     }
     .yellow-shape-container {
       position: absolute;

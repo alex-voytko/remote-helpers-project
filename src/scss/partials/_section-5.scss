@@ -42,13 +42,13 @@
             -webkit-text-stroke: 1px white;
           }
           &:first-child {
-            margin-bottom: 90px;
+            margin-bottom: 42px;
           }
           &:nth-child(2) {
             margin-bottom: 68px;
           }
           &:nth-child(3) {
-            margin-bottom: 114px;
+            margin-bottom: 64px;
           }
         }
         p {
@@ -85,17 +85,19 @@
       }
     }
     .btn {
-      @include standartBtn($accentYellow);
+      @include standartBtn($accentBlue);
     }
     .img-container {
       position: absolute;
       top: 112px;
-      left: -238px;
+      left: -184px;
       z-index: -2;
       .img-contain {
-        width: 286px;
-        height: 620px;
+        width: 221px;
+        height: 480px;
         background-image: url('../img/team.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -125,13 +127,13 @@
         padding-left: 170px;
         li {
           &:first-child {
-            margin-bottom: 70px;
+            margin-bottom: 42px;
           }
           &:nth-child(2) {
-            margin-bottom: 40px;
+            margin-bottom: 42px;
           }
           &:nth-child(3) {
-            margin-bottom: 65px;
+            margin-bottom: 42px;
           }
         }
       }
@@ -161,13 +163,13 @@
         li {
           margin-bottom: 0;
           &:first-child {
-            margin-bottom: 15px;
+            margin-bottom: -15px;
           }
           &:nth-child(2) {
-            margin-bottom: 0;
+            margin-bottom: -18px;
           }
           &:nth-child(3) {
-            margin-bottom: 20px;
+            margin-bottom: -18px;
           }
         }
         .descr {
@@ -224,10 +226,10 @@
         padding-top: 329px;
         li {
           &:first-child {
-            margin-bottom: 86px;
+            margin-bottom: 70px;
           }
           &:nth-child(2) {
-            margin-bottom: 86px;
+            margin-bottom: 70px;
           }
           &:nth-child(3) {
             margin-bottom: 86px;
@@ -238,10 +240,6 @@
           line-height: 1;
           -webkit-text-stroke: 3px white;
         }
-      }
-      .steps-btn-container {
-        // margin-left: auto;
-        // margin-right: auto;
       }
       .steps-list {
         margin-bottom: 82px;
@@ -265,7 +263,13 @@
       }
     }
     .img-container {
-      display: none;
+      top: 200px;
+      left: initial;
+      right: -40px;
+      .img-contain {
+        width: 480px;
+        height: 1099px;
+      }
     }
   }
 }

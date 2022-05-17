@@ -24,9 +24,9 @@ const fields = [
   {
     type: 'text',
     name: 'note',
-    required: true,
-    placeholder: '2 p.m. - 5 p.m.',
-    label: 'Better time for call*',
+    required: false,
+    placeholder: '9 a.m. - 6 p.m.',
+    label: 'Better time for call',
   },
   {
     type: 'text',
@@ -34,7 +34,7 @@ const fields = [
     placeholder: 'Your company',
     required: false,
     hidden: true,
-    value: 'Worksuite Demo Company',
+    value: 'Remote Helpers',
   },
   {
     type: 'text',
@@ -44,13 +44,26 @@ const fields = [
     hidden: true,
     value: 'RHS',
   },
+  {
+    type: 'text',
+    name: 'promocode',
+    hidden: true,
+    value: 'MVO1Z1W21WOS',
+  },
+  {
+    type: 'textarea',
+    name: 'looking',
+    placeholder: 'Your message',
+    required: false,
+    label: 'What are you looking for?',
+  },
 ];
 const refs = {
   backdrop: document.querySelector('.backdrop'),
   modalBtn: document.querySelector('.modal-btn'),
   form: document.querySelector('.form'),
 };
-const url = 'https://crm.rhelpers.com/api/v1/leads-public';
+const url = 'https://crm-s.com/api/v1/leads-public';
 
 window.addEventListener(
   'DOMContentLoaded',
@@ -113,10 +126,14 @@ refs.form.addEventListener('submit', formZipSubmit);
 function formZipSubmit(e) {
   e.preventDefault();
   const formData = new FormData(e.currentTarget);
+  const note = formData.get('note');
+  const looking = formData.get('looking');
+  formData.set('note', `Time: ${note} Needs: ${looking}`);
+  formData.delete('looking');
   addUserData(formData)
     .then(data => {
       console.log(data);
-      setTimeout(openThankYouModal, 1000);
+      setTimeout(openThankYouModal, 100);
     })
     .catch(error => console.log(error.message));
   refs.form.reset();

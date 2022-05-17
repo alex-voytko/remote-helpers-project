@@ -108,7 +108,6 @@ const logos = `<div class="logo-wrapper">
               width: 220px;
               display: flex;
               align-items: center;
-              margin-right: 0;
             "
           >
             <img src="./img/clients/convertise.png" alt="Convertise" />

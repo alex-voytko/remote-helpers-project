@@ -2163,10 +2163,11 @@ select {
     color: white;
     margin-bottom: 20px;
   }
-  .section-8 .main-content-container .form label:nth-child(4) {
+  .section-8 .main-content-container .form label:last-child {
     margin-bottom: 40px;
   }
-  .section-8 .main-content-container .form label input {
+  .section-8 .main-content-container .form label input,
+  .section-8 .main-content-container .form label textarea {
     width: 100%;
     display: block;
     height: 60px;
@@ -2174,33 +2175,42 @@ select {
     padding-left: 13px;
     margin-top: 10px;
   }
-  .section-8 .main-content-container .form label input::-webkit-input-placeholder {
+  .section-8 .main-content-container .form label input::-webkit-input-placeholder,
+  .section-8 .main-content-container .form label textarea::-webkit-input-placeholder {
     font-family: 'Helvetica-light';
     font-weight: 300;
     font-size: 16px;
     line-height: 1.375;
     color: rgba(57, 68, 145, 0.54);
   }
-  .section-8 .main-content-container .form label input:-ms-input-placeholder {
+  .section-8 .main-content-container .form label input:-ms-input-placeholder,
+  .section-8 .main-content-container .form label textarea:-ms-input-placeholder {
     font-family: 'Helvetica-light';
     font-weight: 300;
     font-size: 16px;
     line-height: 1.375;
     color: rgba(57, 68, 145, 0.54);
   }
-  .section-8 .main-content-container .form label input::-ms-input-placeholder {
+  .section-8 .main-content-container .form label input::-ms-input-placeholder,
+  .section-8 .main-content-container .form label textarea::-ms-input-placeholder {
     font-family: 'Helvetica-light';
     font-weight: 300;
     font-size: 16px;
     line-height: 1.375;
     color: rgba(57, 68, 145, 0.54);
   }
-  .section-8 .main-content-container .form label input::placeholder {
+  .section-8 .main-content-container .form label input::placeholder,
+  .section-8 .main-content-container .form label textarea::placeholder {
     font-family: 'Helvetica-light';
     font-weight: 300;
     font-size: 16px;
     line-height: 1.375;
     color: rgba(57, 68, 145, 0.54);
+  }
+  .section-8 .main-content-container .form label textarea {
+    min-width: 100%;
+    height: auto;
+    padding-top: 13px;
   }
   .section-8 .main-content-container .form button {
     width: 330px;
@@ -2244,7 +2254,7 @@ select {
   .section-8 .main-content-container .img-shape-container .shape-container {
     position: absolute;
     width: 250px;
-    height: 618px;
+    height: 720px;
     z-index: -1;
     background-color: rgba(212, 14, 73, 0.6);
     mix-blend-mode: darken;
@@ -2252,12 +2262,13 @@ select {
   .section-8 .main-content-container .img-shape-container .img-contain {
     position: absolute;
     width: 270px;
-    height: 500px;
+    height: 630px;
     top: 40px;
     left: 50px;
     z-index: -2;
     background-image: url("../img/get-in-touch.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
   .section-8 .main-content-container .descr-container {
@@ -2326,9 +2337,6 @@ select {
             justify-content: center;
   }
   .section-8 .main-content-container .form .label-container {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2345,6 +2353,9 @@ select {
   }
   .section-8 .main-content-container .form .label-container label:nth-child(n + 3) {
     margin-bottom: 50px;
+  }
+  .section-8 .main-content-container .form .label-container label:nth-last-child(1) {
+    min-width: 100%;
   }
   .section-8 .main-content-container .form .label-container input {
     width: 300px;

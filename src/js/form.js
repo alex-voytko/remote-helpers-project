@@ -62,8 +62,13 @@ const refs = {
   backdrop: document.querySelector('.backdrop'),
   modalBtn: document.querySelector('.modal-btn'),
   form: document.querySelector('.form'),
+  calandly: document.querySelector('.calendly-inline-widget'),
 };
 const url = 'https://crm-s.com/api/v1/leads-public';
+
+refs.calandly.addEventListener('click', () => {
+  console.log(e.target);
+});
 
 window.addEventListener(
   'DOMContentLoaded',

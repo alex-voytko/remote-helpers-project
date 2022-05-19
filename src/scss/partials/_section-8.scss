@@ -91,7 +91,7 @@
       .form {
         display: block;
         width: 355px;
-        height: 1080px;
+        height: 1050px;
         justify-content: space-between;
         margin-right: 33px;
         button {
@@ -100,6 +100,10 @@
       }
       .calendly-flex-container {
         width: 400px;
+        margin-top: 0;
+        .title {
+          display: none;
+        }
         .calendly-inline-widget {
           width: 100%;
           max-height: 1000px;
@@ -115,20 +119,22 @@
   .section-8 {
     padding-bottom: 0;
     .title {
+      width: 100%;
       font-size: 48px;
-      text-align: right;
-      padding-right: 200px;
       margin-bottom: 0;
       span {
-        padding-top: 20px;
+        padding-top: 30px;
+        &:first-child {
+          display: inline;
+        }
       }
     }
     .main-content-container {
       flex-direction: row-reverse;
       .form {
         margin-top: 70px;
+        margin-right: 0;
         width: 100%;
-        height: 1000px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -160,7 +166,9 @@
         }
       }
       .calendly-flex-container {
+        display: block;
         margin-top: 40px;
+        padding-right: 50px;
         .title {
           width: 100%;
           padding-right: 0;
@@ -184,10 +192,9 @@
     padding-bottom: 200px;
     .title {
       font-size: 64px;
-      line-height: 1.125;
-      padding-right: 473px;
+      line-height: 1;
       span {
-        padding-top: 0;
+        padding-top: 20px;
       }
     }
     .main-content-container {
@@ -215,6 +222,7 @@
         }
       }
       .calendly-flex-container {
+        margin-top: 0;
         .title {
           min-width: 800px;
           font-size: 48px;

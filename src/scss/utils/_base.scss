@@ -23,11 +23,14 @@ a {
   &:hover {
     cursor: pointer;
   }
-}
 
-a {
-  text-decoration: none;
-  color: #fff;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  &:focus {
+    outline: 3px solid $accentYellow;
+  }
 }
 button {
   a {
@@ -84,6 +87,10 @@ button,
 textarea,
 select {
   font: inherit;
+  color: $accentYellow;
+  &:focus {
+    outline: 3px solid $accentYellow;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');

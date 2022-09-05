@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
 *,
 *::before,
@@ -11,7 +12,6 @@
     overflow-x: hidden;
   }
 }
-
 html {
   background: #fbfbfd;
 }
@@ -27,15 +27,18 @@ a {
   padding: 0;
   margin: 0;
 }
-
 button:hover,
 a:hover {
   cursor: pointer;
 }
-
-a {
+button a,
+a a {
   text-decoration: none;
   color: #fff;
+}
+button:focus,
+a:focus {
+  outline: 3px solid #d40e49;
 }
 
 button a {
@@ -74,7 +77,8 @@ ol[class] {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 img {
@@ -91,26 +95,30 @@ button,
 textarea,
 select {
   font: inherit;
+  color: #d40e49;
+}
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #d40e49;
 }
 
 @font-face {
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   src: url("../fonts/helvetica_regular.otf") format("opentype");
 }
-
 @font-face {
-  font-family: 'Helvetica-bold';
+  font-family: "Helvetica-bold";
   src: url("../fonts/helvetica_bold.otf") format("opentype");
 }
-
 @font-face {
-  font-family: 'Helvetica-light';
+  font-family: "Helvetica-light";
   src: url("../fonts/helvetica_light.otf") format("opentype");
 }
-
 @media screen and (min-width: 360px) {
   section,
-  footer {
+footer {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -125,25 +133,21 @@ select {
     margin-left: auto;
   }
 }
-
 @media screen and (min-width: 768px) {
   .wrapper {
     width: 738px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .wrapper {
     width: 1100px;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .wrapper {
     width: 1716px;
   }
 }
-
 @media screen and (min-width: 360px) {
   .hero-section {
     position: relative;
@@ -165,7 +169,7 @@ select {
     z-index: 2;
   }
   .hero-section .wrapper .link-email p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -179,7 +183,7 @@ select {
     display: none;
   }
   .hero-section .wrapper .hero-title {
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-size: 48px;
     line-height: 100%;
     color: #23329a;
@@ -193,7 +197,7 @@ select {
     margin-bottom: 60px;
   }
   .hero-section .wrapper .text-container .hero-description {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-weight: 400;
     font-size: 18px;
     line-height: 120%;
@@ -205,7 +209,7 @@ select {
   .hero-section .wrapper .btn-container .hero-btn-1 {
     width: 330px;
     height: 60px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 27.3469px;
     line-height: 170%;
     background-color: #23329a;
@@ -223,7 +227,7 @@ select {
     width: 228px;
   }
   .hero-section .wrapper .skills-container::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -234,7 +238,7 @@ select {
     position: absolute;
     right: -75px;
     top: 0;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
@@ -253,7 +257,7 @@ select {
     margin-bottom: 0;
   }
   .hero-section .wrapper .skills-container .skills-list li p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-weight: 400;
     font-size: 24px;
     line-height: 33px;
@@ -289,7 +293,6 @@ select {
     z-index: -2;
   }
 }
-
 @media screen and (min-width: 768px) {
   .hero-section .wrapper {
     padding-top: 40px;
@@ -309,7 +312,7 @@ select {
   .hero-section .wrapper .hero-description {
     width: 420px;
     display: block;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 24px;
     line-height: 150%;
     color: #23329a;
@@ -327,7 +330,7 @@ select {
   .hero-section .wrapper .btn-container .hero-btn-1 {
     width: 330px;
     height: 60px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 27.3469px;
     line-height: 170%;
     background-color: #23329a;
@@ -371,7 +374,6 @@ select {
     top: -200px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .hero-section {
     background-size: cover;
@@ -406,7 +408,7 @@ select {
     fill: #23329a;
   }
   .hero-section .wrapper .link-phone p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 24px;
     line-height: 140%;
     color: #23329a;
@@ -482,7 +484,6 @@ select {
     height: 800px;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .hero-section {
     padding-top: 40px;
@@ -525,7 +526,7 @@ select {
   .hero-section .wrapper .btn-container .hero-btn-1 {
     width: 441px;
     height: 81px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 36px;
     line-height: 170%;
     background-color: #23329a;
@@ -588,7 +589,6 @@ select {
     background-position: 10% bottom;
   }
 }
-
 @media screen and (min-width: 360px) {
   .section-2 {
     position: relative;
@@ -605,7 +605,7 @@ select {
   }
   .section-2 .content-flex-container .description-container .title {
     width: 230px;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-size: 24px;
     line-height: 1.21;
     color: #d40e49;
@@ -613,7 +613,7 @@ select {
   }
   .section-2 .content-flex-container .description-container .description {
     width: 218px;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 16px;
     line-height: 170%;
     color: #23329a;
@@ -631,7 +631,7 @@ select {
     padding-bottom: 126px;
   }
   .section-2 .content-flex-container .stats-container::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -643,13 +643,13 @@ select {
   }
   .section-2 .content-flex-container .stats-container .stats-list li p {
     padding-left: 3px;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 16px;
     line-height: 170%;
     color: white;
   }
   .section-2 .content-flex-container .stats-container .stats-list li p:first-child {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 44px;
     color: transparent;
     line-height: 170%;
@@ -670,7 +670,7 @@ select {
     padding: 35px 11px 62px 11px;
   }
   .section-2 .you-can-trust-container::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
@@ -679,7 +679,7 @@ select {
   }
   .section-2 .you-can-trust-container .description {
     width: 197px;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 16px;
     line-height: 170%;
     color: white;
@@ -688,7 +688,7 @@ select {
     position: absolute;
     left: 42px;
     bottom: 19px;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-size: 24px;
     line-height: 27px;
     white-space: nowrap;
@@ -711,7 +711,6 @@ select {
     background-position: 30% bottom;
   }
 }
-
 @media screen and (min-width: 768px) {
   .section-2 .wrapper {
     position: relative;
@@ -779,7 +778,6 @@ select {
     background-position: 30% top;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section-2 .img-container {
     top: 500px;
@@ -857,7 +855,6 @@ select {
             transform: translateX(-50%);
   }
 }
-
 @media screen and (min-width: 1920px) {
   .section-2 .img-container {
     top: 660px;
@@ -953,7 +950,6 @@ select {
     height: 476px;
   }
 }
-
 @media screen and (min-width: 360px) {
   .section-3 {
     position: relative;
@@ -962,7 +958,7 @@ select {
   }
   .section-3 .title {
     width: 245px;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -993,7 +989,7 @@ select {
   }
   .section-3 .advantage-list__number-container p {
     width: 80px;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 52px;
@@ -1003,13 +999,12 @@ select {
     -webkit-text-stroke: 1px #fff;
   }
   .section-3 .advantage-list__description-container p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 16px;
     line-height: 150%;
     color: #23329a;
   }
 }
-
 @media screen and (min-width: 768px) {
   .section-3 {
     padding-top: 120px;
@@ -1039,7 +1034,6 @@ select {
     margin-right: 25px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section-3 {
     padding-bottom: 100px;
@@ -1054,7 +1048,7 @@ select {
   .section-3 .advantage-list__item {
     width: 520px;
   }
-  .section-3 .advantage-list__item:nth-child(-n + 2) {
+  .section-3 .advantage-list__item:nth-child(-n+2) {
     margin-bottom: 70px;
   }
   .section-3 .advantage-list__item:nth-child(odd) {
@@ -1076,7 +1070,6 @@ select {
     font-size: 24px;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .section-3 {
     padding-top: 180px;
@@ -1121,7 +1114,6 @@ select {
     padding-top: 10px;
   }
 }
-
 @media screen and (min-width: 360px) {
   .section-4 {
     width: 100%;
@@ -1133,7 +1125,7 @@ select {
     background-position: 28% top;
   }
   .section-4 .title {
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -1145,7 +1137,7 @@ select {
     margin-bottom: 40px;
   }
   .section-4 .descr-container p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-size: 18px;
     line-height: 140%;
@@ -1159,7 +1151,7 @@ select {
   }
   .section-4 .content-flex-container .candidate-container h3 {
     width: 134px;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1173,7 +1165,7 @@ select {
     margin-bottom: 5px;
   }
   .section-4 .content-flex-container .candidate-container p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1181,7 +1173,7 @@ select {
     color: #ffffff;
   }
   .section-4 .content-flex-container .candidate-container p::before {
-    content: '\2022';
+    content: "•";
     color: #ffffff;
     margin-right: 7px;
   }
@@ -1202,7 +1194,7 @@ select {
     width: 100%;
   }
   .section-4 .content-flex-container .prices-container h3 {
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1219,7 +1211,7 @@ select {
     margin-right: 42px;
   }
   .section-4 .content-flex-container .prices-container .price-list .price-item__work-shedule {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 24px;
     line-height: 1.375;
     color: #ffffff;
@@ -1229,7 +1221,7 @@ select {
     display: none;
   }
   .section-4 .content-flex-container .prices-container .price-list .price-item__price {
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-weight: 700;
     font-size: 25.26px;
     line-height: 140%;
@@ -1247,7 +1239,6 @@ select {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   .section-4 {
     background-position: 28% bottom;
@@ -1296,7 +1287,6 @@ select {
     margin-bottom: 30px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section-4 {
     padding-top: 90px;
@@ -1357,7 +1347,6 @@ select {
     padding-left: 100px;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .section-4 {
     position: relative;
@@ -1444,7 +1433,7 @@ select {
     right: 312px;
   }
   .section-4 .yellow-shape-container::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 365px;
     height: 1000px;
@@ -1458,7 +1447,7 @@ select {
     top: 123px;
     left: 146px;
     display: block;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-style: normal;
     font-weight: 400;
     font-size: 140px;
@@ -1467,7 +1456,6 @@ select {
     -webkit-text-stroke: 2px #fff;
   }
 }
-
 @media screen and (min-width: 360px) {
   .section-5 {
     position: relative;
@@ -1478,7 +1466,7 @@ select {
     position: relative;
   }
   .section-5 .title {
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-weight: 700;
     font-size: 24px;
     line-height: 1.125;
@@ -1507,7 +1495,7 @@ select {
     padding-bottom: 44px;
   }
   .section-5 .steps-container .number-list::after {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0 0 0 -15px;
     z-index: -1;
@@ -1528,7 +1516,7 @@ select {
     margin-bottom: 64px;
   }
   .section-5 .steps-container .number-list p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -1540,14 +1528,14 @@ select {
     margin-bottom: 60px;
   }
   .section-5 .steps-container .steps-list h3 {
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 18px;
     line-height: 120%;
     color: #23329a;
     margin-bottom: 10px;
   }
   .section-5 .steps-container .steps-list p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 16px;
     line-height: 150%;
     color: #23329a;
@@ -1561,7 +1549,7 @@ select {
   .section-5 .btn {
     width: 330px;
     height: 60px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 27.3469px;
     line-height: 170%;
     background-color: #23329a;
@@ -1587,7 +1575,6 @@ select {
     background-repeat: no-repeat;
   }
 }
-
 @media screen and (min-width: 768px) {
   .section-5 .title {
     font-size: 38px;
@@ -1630,7 +1617,6 @@ select {
     height: 542px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section-5 .title {
     font-size: 48px;
@@ -1676,7 +1662,6 @@ select {
     height: 620px;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .section-5 {
     padding-bottom: 0;
@@ -1740,7 +1725,7 @@ select {
     margin-left: 0;
     width: 441px;
     height: 81px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 36px;
     line-height: 170%;
     background-color: #23329a;
@@ -1762,14 +1747,13 @@ select {
     height: 1099px;
   }
 }
-
 @media screen and (min-width: 360px) {
   .section-7 {
     position: relative;
     padding-bottom: 80px;
   }
   .section-7 .title {
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1816,7 +1800,7 @@ select {
   }
   .section-7 .feedback-list__number-container p {
     width: 67px;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 52px;
@@ -1833,13 +1817,13 @@ select {
   }
   .section-7 .feedback-list__title-container h3 {
     width: 107px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 18px;
     line-height: 120%;
     color: #23329a;
   }
   .section-7 .feedback-list__title-container__role {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1851,7 +1835,7 @@ select {
     padding-left: 60px;
   }
   .section-7 .feedback-list__description-container p {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 16px;
     line-height: 150%;
     color: #23329a;
@@ -1868,7 +1852,7 @@ select {
     width: 64;
     bottom: 2px;
     right: 42px;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 14px;
     line-height: 120%;
     -webkit-text-decoration-line: underline;
@@ -1876,7 +1860,6 @@ select {
     color: #d40e49;
   }
 }
-
 @media screen and (min-width: 768px) {
   .section-7 .title {
     font-size: 38px;
@@ -1901,7 +1884,6 @@ select {
     width: 350px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section-7 .title {
     font-size: 48px;
@@ -1953,7 +1935,7 @@ select {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
@@ -1976,10 +1958,10 @@ select {
     display: inline;
   }
   .section-7 .feedback-list__item .feedback-list__description-container p::before {
-    content: '\201C';
+    content: "“";
   }
   .section-7 .feedback-list__item .feedback-list__description-container p::after {
-    content: '\201D';
+    content: "”";
   }
   .section-7 .feedback-list__item .feedback-list__description-container__read-more {
     display: none;
@@ -2028,7 +2010,6 @@ select {
     margin-right: 0;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .section-7 {
     padding-top: 180px;
@@ -2116,7 +2097,6 @@ select {
     font-weight: 400;
   }
 }
-
 @media screen and (min-width: 360px) {
   .section-8 {
     padding-bottom: 60px;
@@ -2124,7 +2104,7 @@ select {
   .section-8 .title {
     width: 100%;
     display: block;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-size: 24px;
     line-height: 27px;
     color: #d40e49;
@@ -2149,7 +2129,7 @@ select {
   }
   .section-8 .main-content-container .form label {
     display: block;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-size: 16px;
     line-height: 1.375;
     color: white;
@@ -2159,7 +2139,7 @@ select {
     margin-bottom: 40px;
   }
   .section-8 .main-content-container .form label input,
-  .section-8 .main-content-container .form label textarea {
+.section-8 .main-content-container .form label textarea {
     width: 100%;
     display: block;
     height: 60px;
@@ -2167,33 +2147,37 @@ select {
     padding-left: 13px;
     margin-top: 10px;
   }
-  .section-8 .main-content-container .form label input::-webkit-input-placeholder,
-  .section-8 .main-content-container .form label textarea::-webkit-input-placeholder {
-    font-family: 'Helvetica-light';
+  .section-8 .main-content-container .form label input::-webkit-input-placeholder, .section-8 .main-content-container .form label textarea::-webkit-input-placeholder {
+    font-family: "Helvetica-light";
     font-weight: 300;
     font-size: 16px;
     line-height: 1.375;
     color: rgba(57, 68, 145, 0.54);
   }
-  .section-8 .main-content-container .form label input:-ms-input-placeholder,
-  .section-8 .main-content-container .form label textarea:-ms-input-placeholder {
-    font-family: 'Helvetica-light';
+  .section-8 .main-content-container .form label input::-moz-placeholder, .section-8 .main-content-container .form label textarea::-moz-placeholder {
+    font-family: "Helvetica-light";
     font-weight: 300;
     font-size: 16px;
     line-height: 1.375;
     color: rgba(57, 68, 145, 0.54);
   }
-  .section-8 .main-content-container .form label input::-ms-input-placeholder,
-  .section-8 .main-content-container .form label textarea::-ms-input-placeholder {
-    font-family: 'Helvetica-light';
+  .section-8 .main-content-container .form label input:-ms-input-placeholder, .section-8 .main-content-container .form label textarea:-ms-input-placeholder {
+    font-family: "Helvetica-light";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.375;
+    color: rgba(57, 68, 145, 0.54);
+  }
+  .section-8 .main-content-container .form label input::-ms-input-placeholder, .section-8 .main-content-container .form label textarea::-ms-input-placeholder {
+    font-family: "Helvetica-light";
     font-weight: 300;
     font-size: 16px;
     line-height: 1.375;
     color: rgba(57, 68, 145, 0.54);
   }
   .section-8 .main-content-container .form label input::placeholder,
-  .section-8 .main-content-container .form label textarea::placeholder {
-    font-family: 'Helvetica-light';
+.section-8 .main-content-container .form label textarea::placeholder {
+    font-family: "Helvetica-light";
     font-weight: 300;
     font-size: 16px;
     line-height: 1.375;
@@ -2207,7 +2191,7 @@ select {
   .section-8 .main-content-container .form button {
     width: 330px;
     height: 60px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 27.3469px;
     line-height: 170%;
     background-color: #d40e49;
@@ -2226,7 +2210,7 @@ select {
   .section-8 .main-content-container .calendly-flex-container .title {
     width: 100%;
     display: block;
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-size: 24px;
     line-height: 27px;
     color: #d40e49;
@@ -2235,7 +2219,6 @@ select {
     min-height: 1200px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .section-8 {
     padding-bottom: 90px;
@@ -2280,7 +2263,6 @@ select {
     overflow: hidden;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section-8 {
     padding-bottom: 0;
@@ -2326,7 +2308,7 @@ select {
   .section-8 .main-content-container .form .label-container label:nth-child(even) {
     margin-right: 0;
   }
-  .section-8 .main-content-container .form .label-container label:nth-child(n + 3) {
+  .section-8 .main-content-container .form .label-container label:nth-child(n+3) {
     margin-bottom: 50px;
   }
   .section-8 .main-content-container .form .label-container label:nth-last-child(1) {
@@ -2360,7 +2342,6 @@ select {
     margin-left: 50px;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .section-8 {
     padding-bottom: 200px;
@@ -2394,6 +2375,10 @@ select {
     line-height: 1.389;
     font-size: 18px;
   }
+  .section-8 .main-content-container .form .label-container input::-moz-placeholder {
+    line-height: 1.389;
+    font-size: 18px;
+  }
   .section-8 .main-content-container .form .label-container input:-ms-input-placeholder {
     line-height: 1.389;
     font-size: 18px;
@@ -2409,7 +2394,7 @@ select {
   .section-8 .main-content-container .form button {
     width: 312px;
     height: 81px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 36px;
     line-height: 170%;
     background-color: #d40e49;
@@ -2438,7 +2423,6 @@ select {
     overflow: hidden;
   }
 }
-
 @media screen and (min-width: 360px) {
   .footer {
     padding-bottom: 41px;
@@ -2453,7 +2437,7 @@ select {
             flex-direction: column-reverse;
   }
   .footer .rights-container .description {
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2466,7 +2450,7 @@ select {
     width: -moz-fit-content;
     width: fit-content;
     display: block;
-    font-family: 'Helvetica';
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -2495,7 +2479,6 @@ select {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) {
   .footer {
     padding-bottom: 40px;
@@ -2510,7 +2493,6 @@ select {
     margin-bottom: 20px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .footer {
     padding-top: 100px;
@@ -2558,7 +2540,6 @@ select {
     fill: #d40e49;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .footer {
     padding-top: 100px;
@@ -2586,7 +2567,6 @@ select {
     height: 60px;
   }
 }
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -2601,7 +2581,6 @@ select {
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
-
 .backdrop.is-visible {
   pointer-events: initial;
   visibility: visible;
@@ -2624,7 +2603,7 @@ select {
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   }
   .modal p {
-    font-family: 'Philosopher';
+    font-family: "Philosopher";
     font-weight: 700;
     font-size: 20px;
     line-height: 1;
@@ -2641,7 +2620,7 @@ select {
     margin-right: auto;
     width: 330px;
     height: 60px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 27.3469px;
     line-height: 170%;
     background-color: #23329a;
@@ -2657,7 +2636,6 @@ select {
     vertical-align: middle;
   }
 }
-
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 500px;
@@ -2670,7 +2648,6 @@ select {
     margin-bottom: 40px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 600px;
@@ -2681,7 +2658,7 @@ select {
   .modal .modal-btn {
     width: 330px;
     height: 60px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 27.3469px;
     line-height: 170%;
     background-color: #23329a;
@@ -2695,7 +2672,6 @@ select {
     vertical-align: middle;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .modal {
     max-width: 700px;
@@ -2711,7 +2687,7 @@ select {
   .modal .modal-btn {
     width: 200px;
     height: 81px;
-    font-family: 'Helvetica-bold';
+    font-family: "Helvetica-bold";
     font-size: 36px;
     line-height: 170%;
     background-color: #23329a;
@@ -2723,5 +2699,4 @@ select {
     display: table-cell;
     vertical-align: middle;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

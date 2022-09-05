@@ -64,11 +64,6 @@ const refs = {
   form: document.querySelector('.form'),
   calandly: document.querySelector('.calendly-inline-widget'),
 };
-const url = 'https://crm-s.com/api/v1/leads-public';
-
-refs.calandly.addEventListener('click', () => {
-  console.log(e.target);
-});
 
 window.addEventListener(
   'DOMContentLoaded',
@@ -135,21 +130,8 @@ function formZipSubmit(e) {
   const looking = formData.get('looking');
   formData.set('note', `Time: ${note} Needs: ${looking}`);
   formData.delete('looking');
-  addUserData(formData)
-    .then(data => {
-      console.log(data);
-      setTimeout(openThankYouModal, 100);
-    })
-    .catch(error => console.log(error.message));
+  setTimeout(openThankYouModal, 100);
   refs.form.reset();
-}
-async function addUserData(userData) {
-  const response = await fetch(url, {
-    method: 'POST',
-    body: userData,
-  });
-
-  return response.json();
 }
 
 function openThankYouModal() {
